@@ -1,0 +1,10 @@
+.classpath
+.settings
+.project
+target
+.idea
+*/.classpath
+*/target
+*.iml
+*/.gitignore
+*/dependency-reduced-pom.xml
