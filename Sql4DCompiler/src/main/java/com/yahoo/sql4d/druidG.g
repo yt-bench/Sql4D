@@ -247,7 +247,7 @@ queryStmnt returns [QueryMeta qMeta]
 		      }    
 		  )?
 		    
-	  	  (WS THEN WS p=postAggItem {QueryUtils.setPostAggregation(qMeta, p);})?
+	  	  (WS THEN WS p=postAggItem {QueryUtils.addPostAggregation(qMeta, p);} (WS? AND WS? t=postAggItem {QueryUtils.addPostAggregation(qMeta, t);})* )?
 	  )
 	  (WS WHICH WS CONTAINS {qMeta = SearchQueryMeta.promote(qMeta);} WS? LPARAN WS? (s1=SINGLE_QUOTE_STRING {((SearchQueryMeta)qMeta).type = "insensitive_contains";((SearchQueryMeta)qMeta).addValue($s1.text);}(WS? ',' WS? s2=SINGLE_QUOTE_STRING {((SearchQueryMeta)qMeta).type = "fragment";((SearchQueryMeta)qMeta).addValue($s2.text);})*) WS? RPARAN
 	   WS SORT WS? LPARAN WS? (s=SINGLE_QUOTE_STRING) {((SearchQueryMeta)qMeta).setSort($s.text);} WS? RPARAN

@@ -20,9 +20,9 @@ import com.yahoo.sql4d.query.timeseries.TimeSeriesQueryMeta;
  * @author srikalyan
  */
 public class QueryUtils {
-    public static void setPostAggregation(QueryMeta qMeta, PostAggItem pItem) {
+    public static void addPostAggregation(QueryMeta qMeta, PostAggItem pItem) {
         if (qMeta instanceof BaseAggQueryMeta) {
-            ((BaseAggQueryMeta)qMeta).postAggregations = pItem;
+            ((BaseAggQueryMeta)qMeta).addPostAggItem(pItem);
         }
     }
     /**

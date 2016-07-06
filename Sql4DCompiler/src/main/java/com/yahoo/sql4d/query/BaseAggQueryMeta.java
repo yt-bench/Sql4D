@@ -10,12 +10,15 @@
  */
 package com.yahoo.sql4d.query;
 
-import com.yahoo.sql4d.query.nodes.AggItem;
-import com.yahoo.sql4d.query.nodes.PostAggItem;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import com.yahoo.sql4d.query.nodes.AggItem;
+import com.yahoo.sql4d.query.nodes.PostAggItem;
 
 /**
  * GroupBy, TimeSeries etc come under this category.
@@ -23,7 +26,7 @@ import org.json.JSONObject;
  */
 public class BaseAggQueryMeta  extends PlainDimQueryMeta {
     public List<AggItem> aggregations; 
-    public PostAggItem postAggregations;
+    public List<PostAggItem> postAggregations;
     
     public BaseAggQueryMeta() {
     }
@@ -35,6 +38,13 @@ public class BaseAggQueryMeta  extends PlainDimQueryMeta {
             aggregations = ((BaseAggQueryMeta)q).aggregations;
             postAggregations = ((BaseAggQueryMeta)q).postAggregations;
         }
+    }
+    
+    public void addPostAggItem(PostAggItem item){
+      if(postAggregations==null){
+        postAggregations = new ArrayList<PostAggItem>();
+      }
+      postAggregations.add(item);
     }
     
     @Override
@@ -59,7 +69,9 @@ public class BaseAggQueryMeta  extends PlainDimQueryMeta {
         
         if (postAggregations != null) {
             JSONArray jsonArr = new JSONArray();
-            jsonArr.put(postAggregations.getJson());
+            for(PostAggItem item:postAggregations){
+              jsonArr.put(item.getJson());
+            }
             map.put("postAggregations", jsonArr);
         } else {
             map.put("postAggregations", new JSONArray());
