@@ -487,8 +487,10 @@ aggFunc returns [String name]
 	| DOUBLE_SUM {$name = "doubleSum";}
 	| UNIQUE {$name = "unique";}
 	| HYPER_UNIQUE {$name = "hyperUnique";}
-	| MIN {$name = "min";}
-	| MAX {$name = "max";}
+	| DOUBLE_MIN {$name = "doubleMin";}
+	| DOUBLE_MAX {$name = "doubleMax";}
+	| LONG_MIN {$name = "longMin";}
+	| LONG_MAX {$name = "longMax";}
 	| JAVASCRIPT {$name = "javascript";}
 	;
 /////////////////////////////////////////////////////////
@@ -626,8 +628,10 @@ LONG_SUM :	('LONG_SUM');
 DOUBLE_SUM :	('DOUBLE_SUM');
 UNIQUE  :	('UNIQUE');
 HYPER_UNIQUE  :	('HYPER_UNIQUE');
-MIN 	:	('MIN');
-MAX	:	('MAX');
+DOUBLE_MIN 	:	('DOUBLE_MIN');
+DOUBLE_MAX	:	('DOUBLE_MAX');
+LONG_MIN 	:	('LONG_MIN');
+LONG_MAX	:	('LONG_MAX');
 
 DURATION:	('DURATION');
 PERIOD	:	('PERIOD');

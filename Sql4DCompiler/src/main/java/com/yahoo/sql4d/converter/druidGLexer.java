@@ -1,4 +1,4 @@
-// $ANTLR 3.5.2 Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g 2016-07-06 14:20:18
+// $ANTLR 3.5.2 Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g 2016-07-06 18:38:10
 
 	package com.yahoo.sql4d.converter;
 
@@ -11,10 +11,10 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class druidGLexer extends Lexer {
 	public static final int EOF=-1;
-	public static final int T__90=90;
-	public static final int T__91=91;
 	public static final int T__92=92;
 	public static final int T__93=93;
+	public static final int T__94=94;
+	public static final int T__95=95;
 	public static final int AND=4;
 	public static final int ARITH_OPER=5;
 	public static final int AS=6;
@@ -38,69 +38,71 @@ public class druidGLexer extends Lexer {
 	public static final int DELETE=24;
 	public static final int DELIMITER=25;
 	public static final int DESC=26;
-	public static final int DOUBLE_SUM=27;
-	public static final int DROP=28;
-	public static final int DURATION=29;
-	public static final int EQUALS=30;
-	public static final int ESC_SEQ=31;
-	public static final int FIELD_ACCESS=32;
-	public static final int FLOAT=33;
-	public static final int FROM=34;
-	public static final int GROUP=35;
-	public static final int HAVING=36;
-	public static final int HEX_DIGIT=37;
-	public static final int HINT=38;
-	public static final int HYPER_UNIQUE=39;
-	public static final int ID=40;
-	public static final int IN=41;
-	public static final int INCLUDE=42;
-	public static final int INSERT=43;
-	public static final int INSERT_HADOOP=44;
-	public static final int INSERT_REALTIME=45;
-	public static final int INTO=46;
-	public static final int ISO=47;
-	public static final int JAVASCRIPT=48;
-	public static final int JOIN=49;
-	public static final int KAFKA=50;
-	public static final int LCURLY=51;
-	public static final int LEFT_JOIN=52;
-	public static final int LIKE=53;
-	public static final int LIMIT=54;
-	public static final int LONG=55;
-	public static final int LONG_SUM=56;
-	public static final int LPARAN=57;
-	public static final int LSQUARE=58;
-	public static final int MAX=59;
-	public static final int MAX_WINDOW=60;
-	public static final int MIN=61;
-	public static final int NEWLINE=62;
-	public static final int NOT=63;
-	public static final int NUM=64;
-	public static final int OCTAL_ESC=65;
-	public static final int ON=66;
-	public static final int OPT_AMPERSAND=67;
-	public static final int OPT_SEMI_COLON=68;
-	public static final int OR=69;
-	public static final int ORDER=70;
-	public static final int PARTITION=71;
-	public static final int PERIOD=72;
-	public static final int RCURLY=73;
-	public static final int RIGHT_JOIN=74;
-	public static final int ROLLUP=75;
-	public static final int RPARAN=76;
-	public static final int RSQUARE=77;
-	public static final int SELECT=78;
-	public static final int SINGLE_QUOTE_STRING=79;
-	public static final int SORT=80;
-	public static final int STRING=81;
-	public static final int TABLE=82;
-	public static final int THEN=83;
-	public static final int UNICODE_ESC=84;
-	public static final int UNIQUE=85;
-	public static final int VALUES=86;
-	public static final int WHERE=87;
-	public static final int WHICH=88;
-	public static final int WS=89;
+	public static final int DOUBLE_MAX=27;
+	public static final int DOUBLE_MIN=28;
+	public static final int DOUBLE_SUM=29;
+	public static final int DROP=30;
+	public static final int DURATION=31;
+	public static final int EQUALS=32;
+	public static final int ESC_SEQ=33;
+	public static final int FIELD_ACCESS=34;
+	public static final int FLOAT=35;
+	public static final int FROM=36;
+	public static final int GROUP=37;
+	public static final int HAVING=38;
+	public static final int HEX_DIGIT=39;
+	public static final int HINT=40;
+	public static final int HYPER_UNIQUE=41;
+	public static final int ID=42;
+	public static final int IN=43;
+	public static final int INCLUDE=44;
+	public static final int INSERT=45;
+	public static final int INSERT_HADOOP=46;
+	public static final int INSERT_REALTIME=47;
+	public static final int INTO=48;
+	public static final int ISO=49;
+	public static final int JAVASCRIPT=50;
+	public static final int JOIN=51;
+	public static final int KAFKA=52;
+	public static final int LCURLY=53;
+	public static final int LEFT_JOIN=54;
+	public static final int LIKE=55;
+	public static final int LIMIT=56;
+	public static final int LONG=57;
+	public static final int LONG_MAX=58;
+	public static final int LONG_MIN=59;
+	public static final int LONG_SUM=60;
+	public static final int LPARAN=61;
+	public static final int LSQUARE=62;
+	public static final int MAX_WINDOW=63;
+	public static final int NEWLINE=64;
+	public static final int NOT=65;
+	public static final int NUM=66;
+	public static final int OCTAL_ESC=67;
+	public static final int ON=68;
+	public static final int OPT_AMPERSAND=69;
+	public static final int OPT_SEMI_COLON=70;
+	public static final int OR=71;
+	public static final int ORDER=72;
+	public static final int PARTITION=73;
+	public static final int PERIOD=74;
+	public static final int RCURLY=75;
+	public static final int RIGHT_JOIN=76;
+	public static final int ROLLUP=77;
+	public static final int RPARAN=78;
+	public static final int RSQUARE=79;
+	public static final int SELECT=80;
+	public static final int SINGLE_QUOTE_STRING=81;
+	public static final int SORT=82;
+	public static final int STRING=83;
+	public static final int TABLE=84;
+	public static final int THEN=85;
+	public static final int UNICODE_ESC=86;
+	public static final int UNIQUE=87;
+	public static final int VALUES=88;
+	public static final int WHERE=89;
+	public static final int WHICH=90;
+	public static final int WS=91;
 
 	// delegates
 	// delegators
@@ -117,56 +119,16 @@ public class druidGLexer extends Lexer {
 	}
 	@Override public String getGrammarFileName() { return "Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g"; }
 
-	// $ANTLR start "T__90"
-	public final void mT__90() throws RecognitionException {
+	// $ANTLR start "T__92"
+	public final void mT__92() throws RecognitionException {
 		try {
-			int _type = T__90;
+			int _type = T__92;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
 			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:6:7: ( '(*)' )
 			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:6:9: '(*)'
 			{
 			match("(*)"); 
 
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally {
-			// do for sure before leaving
-		}
-	}
-	// $ANTLR end "T__90"
-
-	// $ANTLR start "T__91"
-	public final void mT__91() throws RecognitionException {
-		try {
-			int _type = T__91;
-			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:7:7: ( '*' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:7:9: '*'
-			{
-			match('*'); 
-			}
-
-			state.type = _type;
-			state.channel = _channel;
-		}
-		finally {
-			// do for sure before leaving
-		}
-	}
-	// $ANTLR end "T__91"
-
-	// $ANTLR start "T__92"
-	public final void mT__92() throws RecognitionException {
-		try {
-			int _type = T__92;
-			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:8:7: ( ',' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:8:9: ','
-			{
-			match(','); 
 			}
 
 			state.type = _type;
@@ -183,6 +145,46 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = T__93;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:7:7: ( '*' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:7:9: '*'
+			{
+			match('*'); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__93"
+
+	// $ANTLR start "T__94"
+	public final void mT__94() throws RecognitionException {
+		try {
+			int _type = T__94;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:8:7: ( ',' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:8:9: ','
+			{
+			match(','); 
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "T__94"
+
+	// $ANTLR start "T__95"
+	public final void mT__95() throws RecognitionException {
+		try {
+			int _type = T__95;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
 			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:9:7: ( 'interval' )
 			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:9:9: 'interval'
 			{
@@ -197,15 +199,15 @@ public class druidGLexer extends Lexer {
 			// do for sure before leaving
 		}
 	}
-	// $ANTLR end "T__93"
+	// $ANTLR end "T__95"
 
 	// $ANTLR start "LPARAN"
 	public final void mLPARAN() throws RecognitionException {
 		try {
 			int _type = LPARAN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:589:8: ( '(' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:589:11: '('
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:591:8: ( '(' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:591:11: '('
 			{
 			match('('); 
 			}
@@ -224,8 +226,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = RPARAN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:590:8: ( ')' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:590:11: ')'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:592:8: ( ')' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:592:11: ')'
 			{
 			match(')'); 
 			}
@@ -244,8 +246,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = LCURLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:591:8: ( '{' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:591:11: '{'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:593:8: ( '{' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:593:11: '{'
 			{
 			match('{'); 
 			}
@@ -264,8 +266,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = RCURLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:592:8: ( '}' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:592:11: '}'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:594:8: ( '}' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:594:11: '}'
 			{
 			match('}'); 
 			}
@@ -284,8 +286,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = LSQUARE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:593:9: ( '[' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:593:12: '['
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:595:9: ( '[' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:595:12: '['
 			{
 			match('['); 
 			}
@@ -304,8 +306,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = RSQUARE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:594:9: ( ']' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:594:12: ']'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:596:9: ( ']' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:596:12: ']'
 			{
 			match(']'); 
 			}
@@ -324,10 +326,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = INSERT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:597:11: ( ( 'INSERT' | 'insert' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:597:12: ( 'INSERT' | 'insert' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:11: ( ( 'INSERT' | 'insert' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:12: ( 'INSERT' | 'insert' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:597:12: ( 'INSERT' | 'insert' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:12: ( 'INSERT' | 'insert' )
 			int alt1=2;
 			int LA1_0 = input.LA(1);
 			if ( (LA1_0=='I') ) {
@@ -345,14 +347,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt1) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:597:13: 'INSERT'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:13: 'INSERT'
 					{
 					match("INSERT"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:597:22: 'insert'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:22: 'insert'
 					{
 					match("insert"); 
 
@@ -377,10 +379,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = INSERT_HADOOP;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:598:15: ( ( 'INSERT_HADOOP' | 'insert_hadoop' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:598:16: ( 'INSERT_HADOOP' | 'insert_hadoop' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:15: ( ( 'INSERT_HADOOP' | 'insert_hadoop' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:16: ( 'INSERT_HADOOP' | 'insert_hadoop' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:598:16: ( 'INSERT_HADOOP' | 'insert_hadoop' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:16: ( 'INSERT_HADOOP' | 'insert_hadoop' )
 			int alt2=2;
 			int LA2_0 = input.LA(1);
 			if ( (LA2_0=='I') ) {
@@ -398,14 +400,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt2) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:598:17: 'INSERT_HADOOP'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:17: 'INSERT_HADOOP'
 					{
 					match("INSERT_HADOOP"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:598:33: 'insert_hadoop'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:33: 'insert_hadoop'
 					{
 					match("insert_hadoop"); 
 
@@ -430,10 +432,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = INSERT_REALTIME;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:17: ( ( 'INSERT_REALTIME' | 'insert_realtime' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:18: ( 'INSERT_REALTIME' | 'insert_realtime' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:17: ( ( 'INSERT_REALTIME' | 'insert_realtime' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:18: ( 'INSERT_REALTIME' | 'insert_realtime' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:18: ( 'INSERT_REALTIME' | 'insert_realtime' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:18: ( 'INSERT_REALTIME' | 'insert_realtime' )
 			int alt3=2;
 			int LA3_0 = input.LA(1);
 			if ( (LA3_0=='I') ) {
@@ -451,14 +453,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt3) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:19: 'INSERT_REALTIME'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:19: 'INSERT_REALTIME'
 					{
 					match("INSERT_REALTIME"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:599:37: 'insert_realtime'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:37: 'insert_realtime'
 					{
 					match("insert_realtime"); 
 
@@ -483,10 +485,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = INTO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:15: ( ( 'INTO' | 'into' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:16: ( 'INTO' | 'into' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:602:15: ( ( 'INTO' | 'into' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:602:16: ( 'INTO' | 'into' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:16: ( 'INTO' | 'into' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:602:16: ( 'INTO' | 'into' )
 			int alt4=2;
 			int LA4_0 = input.LA(1);
 			if ( (LA4_0=='I') ) {
@@ -504,14 +506,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt4) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:17: 'INTO'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:602:17: 'INTO'
 					{
 					match("INTO"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:600:24: 'into'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:602:24: 'into'
 					{
 					match("into"); 
 
@@ -536,10 +538,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = VALUES;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:17: ( ( 'VALUES' | 'values' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:18: ( 'VALUES' | 'values' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:603:17: ( ( 'VALUES' | 'values' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:603:18: ( 'VALUES' | 'values' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:18: ( 'VALUES' | 'values' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:603:18: ( 'VALUES' | 'values' )
 			int alt5=2;
 			int LA5_0 = input.LA(1);
 			if ( (LA5_0=='V') ) {
@@ -557,14 +559,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt5) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:19: 'VALUES'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:603:19: 'VALUES'
 					{
 					match("VALUES"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:601:28: 'values'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:603:28: 'values'
 					{
 					match("values"); 
 
@@ -589,10 +591,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = MAX_WINDOW;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:604:17: ( ( 'MAX_WINDOW' | 'max_window' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:604:18: ( 'MAX_WINDOW' | 'max_window' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:17: ( ( 'MAX_WINDOW' | 'max_window' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:18: ( 'MAX_WINDOW' | 'max_window' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:604:18: ( 'MAX_WINDOW' | 'max_window' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:18: ( 'MAX_WINDOW' | 'max_window' )
 			int alt6=2;
 			int LA6_0 = input.LA(1);
 			if ( (LA6_0=='M') ) {
@@ -610,14 +612,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt6) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:604:19: 'MAX_WINDOW'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:19: 'MAX_WINDOW'
 					{
 					match("MAX_WINDOW"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:604:32: 'max_window'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:32: 'max_window'
 					{
 					match("max_window"); 
 
@@ -642,10 +644,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DELIMITER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:17: ( ( 'DELIMITER' | 'delimiter' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:18: ( 'DELIMITER' | 'delimiter' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:17: ( ( 'DELIMITER' | 'delimiter' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:18: ( 'DELIMITER' | 'delimiter' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:18: ( 'DELIMITER' | 'delimiter' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:18: ( 'DELIMITER' | 'delimiter' )
 			int alt7=2;
 			int LA7_0 = input.LA(1);
 			if ( (LA7_0=='D') ) {
@@ -663,14 +665,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt7) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:19: 'DELIMITER'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:19: 'DELIMITER'
 					{
 					match("DELIMITER"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:606:31: 'delimiter'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:31: 'delimiter'
 					{
 					match("delimiter"); 
 
@@ -695,10 +697,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = PARTITION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:607:17: ( ( 'PARTITION' | 'partition' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:607:18: ( 'PARTITION' | 'partition' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:609:17: ( ( 'PARTITION' | 'partition' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:609:18: ( 'PARTITION' | 'partition' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:607:18: ( 'PARTITION' | 'partition' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:609:18: ( 'PARTITION' | 'partition' )
 			int alt8=2;
 			int LA8_0 = input.LA(1);
 			if ( (LA8_0=='P') ) {
@@ -716,14 +718,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt8) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:607:19: 'PARTITION'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:609:19: 'PARTITION'
 					{
 					match("PARTITION"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:607:31: 'partition'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:609:31: 'partition'
 					{
 					match("partition"); 
 
@@ -748,10 +750,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = ROLLUP;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:17: ( ( 'ROLLUP' | 'rollup' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:18: ( 'ROLLUP' | 'rollup' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:17: ( ( 'ROLLUP' | 'rollup' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:18: ( 'ROLLUP' | 'rollup' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:18: ( 'ROLLUP' | 'rollup' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:18: ( 'ROLLUP' | 'rollup' )
 			int alt9=2;
 			int LA9_0 = input.LA(1);
 			if ( (LA9_0=='R') ) {
@@ -769,14 +771,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt9) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:19: 'ROLLUP'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:19: 'ROLLUP'
 					{
 					match("ROLLUP"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:608:31: 'rollup'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:31: 'rollup'
 					{
 					match("rollup"); 
 
@@ -801,10 +803,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DROP;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:17: ( ( 'DROP' | 'drop' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:18: ( 'DROP' | 'drop' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:17: ( ( 'DROP' | 'drop' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:18: ( 'DROP' | 'drop' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:18: ( 'DROP' | 'drop' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:18: ( 'DROP' | 'drop' )
 			int alt10=2;
 			int LA10_0 = input.LA(1);
 			if ( (LA10_0=='D') ) {
@@ -822,14 +824,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt10) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:19: 'DROP'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:19: 'DROP'
 					{
 					match("DROP"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:610:26: 'drop'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:26: 'drop'
 					{
 					match("drop"); 
 
@@ -854,10 +856,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = TABLE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:611:17: ( ( 'TABLE' | 'table' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:611:18: ( 'TABLE' | 'table' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:17: ( ( 'TABLE' | 'table' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:18: ( 'TABLE' | 'table' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:611:18: ( 'TABLE' | 'table' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:18: ( 'TABLE' | 'table' )
 			int alt11=2;
 			int LA11_0 = input.LA(1);
 			if ( (LA11_0=='T') ) {
@@ -875,14 +877,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt11) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:611:19: 'TABLE'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:19: 'TABLE'
 					{
 					match("TABLE"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:611:27: 'table'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:27: 'table'
 					{
 					match("table"); 
 
@@ -907,10 +909,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DELETE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:17: ( ( 'DELETE' | 'delete' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:18: ( 'DELETE' | 'delete' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:614:17: ( ( 'DELETE' | 'delete' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:614:18: ( 'DELETE' | 'delete' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:18: ( 'DELETE' | 'delete' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:614:18: ( 'DELETE' | 'delete' )
 			int alt12=2;
 			int LA12_0 = input.LA(1);
 			if ( (LA12_0=='D') ) {
@@ -928,14 +930,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt12) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:19: 'DELETE'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:614:19: 'DELETE'
 					{
 					match("DELETE"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:612:28: 'delete'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:614:28: 'delete'
 					{
 					match("delete"); 
 
@@ -960,10 +962,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = KAFKA;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:17: ( ( 'KAFKA' | 'kafka' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:18: ( 'KAFKA' | 'kafka' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:615:17: ( ( 'KAFKA' | 'kafka' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:615:18: ( 'KAFKA' | 'kafka' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:18: ( 'KAFKA' | 'kafka' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:615:18: ( 'KAFKA' | 'kafka' )
 			int alt13=2;
 			int LA13_0 = input.LA(1);
 			if ( (LA13_0=='K') ) {
@@ -981,14 +983,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt13) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:19: 'KAFKA'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:615:19: 'KAFKA'
 					{
 					match("KAFKA"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:613:27: 'kafka'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:615:27: 'kafka'
 					{
 					match("kafka"); 
 
@@ -1013,11 +1015,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = STRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:617:9: ( ( 'STRING' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:617:10: ( 'STRING' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:619:9: ( ( 'STRING' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:619:10: ( 'STRING' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:617:10: ( 'STRING' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:617:11: 'STRING'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:619:10: ( 'STRING' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:619:11: 'STRING'
 			{
 			match("STRING"); 
 
@@ -1039,11 +1041,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = ISO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:618:6: ( ( 'ISO' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:618:7: ( 'ISO' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:620:6: ( ( 'ISO' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:620:7: ( 'ISO' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:618:7: ( 'ISO' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:618:8: 'ISO'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:620:7: ( 'ISO' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:620:8: 'ISO'
 			{
 			match("ISO"); 
 
@@ -1065,11 +1067,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = AUTO_ISO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:619:10: ( ( 'AUTO_ISO' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:619:11: ( 'AUTO_ISO' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:621:10: ( ( 'AUTO_ISO' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:621:11: ( 'AUTO_ISO' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:619:11: ( 'AUTO_ISO' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:619:12: 'AUTO_ISO'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:621:11: ( 'AUTO_ISO' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:621:12: 'AUTO_ISO'
 			{
 			match("AUTO_ISO"); 
 
@@ -1091,10 +1093,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = SELECT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:622:9: ( ( 'SELECT' | 'select' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:622:11: ( 'SELECT' | 'select' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:9: ( ( 'SELECT' | 'select' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:11: ( 'SELECT' | 'select' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:622:11: ( 'SELECT' | 'select' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:11: ( 'SELECT' | 'select' )
 			int alt14=2;
 			int LA14_0 = input.LA(1);
 			if ( (LA14_0=='S') ) {
@@ -1112,14 +1114,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt14) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:622:12: 'SELECT'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:12: 'SELECT'
 					{
 					match("SELECT"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:622:21: 'select'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:21: 'select'
 					{
 					match("select"); 
 
@@ -1144,11 +1146,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = COUNT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:8: ( ( 'COUNT' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:10: ( 'COUNT' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:626:8: ( ( 'COUNT' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:626:10: ( 'COUNT' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:10: ( 'COUNT' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:624:11: 'COUNT'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:626:10: ( 'COUNT' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:626:11: 'COUNT'
 			{
 			match("COUNT"); 
 
@@ -1170,11 +1172,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = LONG_SUM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:625:10: ( ( 'LONG_SUM' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:625:12: ( 'LONG_SUM' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:627:10: ( ( 'LONG_SUM' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:627:12: ( 'LONG_SUM' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:625:12: ( 'LONG_SUM' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:625:13: 'LONG_SUM'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:627:12: ( 'LONG_SUM' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:627:13: 'LONG_SUM'
 			{
 			match("LONG_SUM"); 
 
@@ -1196,11 +1198,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DOUBLE_SUM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:626:12: ( ( 'DOUBLE_SUM' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:626:14: ( 'DOUBLE_SUM' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:628:12: ( ( 'DOUBLE_SUM' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:628:14: ( 'DOUBLE_SUM' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:626:14: ( 'DOUBLE_SUM' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:626:15: 'DOUBLE_SUM'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:628:14: ( 'DOUBLE_SUM' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:628:15: 'DOUBLE_SUM'
 			{
 			match("DOUBLE_SUM"); 
 
@@ -1222,11 +1224,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = UNIQUE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:627:9: ( ( 'UNIQUE' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:627:11: ( 'UNIQUE' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:629:9: ( ( 'UNIQUE' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:629:11: ( 'UNIQUE' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:627:11: ( 'UNIQUE' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:627:12: 'UNIQUE'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:629:11: ( 'UNIQUE' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:629:12: 'UNIQUE'
 			{
 			match("UNIQUE"); 
 
@@ -1248,11 +1250,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = HYPER_UNIQUE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:628:15: ( ( 'HYPER_UNIQUE' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:628:17: ( 'HYPER_UNIQUE' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:630:15: ( ( 'HYPER_UNIQUE' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:630:17: ( 'HYPER_UNIQUE' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:628:17: ( 'HYPER_UNIQUE' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:628:18: 'HYPER_UNIQUE'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:630:17: ( 'HYPER_UNIQUE' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:630:18: 'HYPER_UNIQUE'
 			{
 			match("HYPER_UNIQUE"); 
 
@@ -1269,18 +1271,18 @@ public class druidGLexer extends Lexer {
 	}
 	// $ANTLR end "HYPER_UNIQUE"
 
-	// $ANTLR start "MIN"
-	public final void mMIN() throws RecognitionException {
+	// $ANTLR start "DOUBLE_MIN"
+	public final void mDOUBLE_MIN() throws RecognitionException {
 		try {
-			int _type = MIN;
+			int _type = DOUBLE_MIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:629:6: ( ( 'MIN' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:629:8: ( 'MIN' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:631:13: ( ( 'DOUBLE_MIN' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:631:15: ( 'DOUBLE_MIN' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:629:8: ( 'MIN' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:629:9: 'MIN'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:631:15: ( 'DOUBLE_MIN' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:631:16: 'DOUBLE_MIN'
 			{
-			match("MIN"); 
+			match("DOUBLE_MIN"); 
 
 			}
 
@@ -1293,20 +1295,20 @@ public class druidGLexer extends Lexer {
 			// do for sure before leaving
 		}
 	}
-	// $ANTLR end "MIN"
+	// $ANTLR end "DOUBLE_MIN"
 
-	// $ANTLR start "MAX"
-	public final void mMAX() throws RecognitionException {
+	// $ANTLR start "DOUBLE_MAX"
+	public final void mDOUBLE_MAX() throws RecognitionException {
 		try {
-			int _type = MAX;
+			int _type = DOUBLE_MAX;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:630:5: ( ( 'MAX' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:630:7: ( 'MAX' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:632:12: ( ( 'DOUBLE_MAX' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:632:14: ( 'DOUBLE_MAX' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:630:7: ( 'MAX' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:630:8: 'MAX'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:632:14: ( 'DOUBLE_MAX' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:632:15: 'DOUBLE_MAX'
 			{
-			match("MAX"); 
+			match("DOUBLE_MAX"); 
 
 			}
 
@@ -1319,18 +1321,70 @@ public class druidGLexer extends Lexer {
 			// do for sure before leaving
 		}
 	}
-	// $ANTLR end "MAX"
+	// $ANTLR end "DOUBLE_MAX"
+
+	// $ANTLR start "LONG_MIN"
+	public final void mLONG_MIN() throws RecognitionException {
+		try {
+			int _type = LONG_MIN;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:633:11: ( ( 'LONG_MIN' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:633:13: ( 'LONG_MIN' )
+			{
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:633:13: ( 'LONG_MIN' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:633:14: 'LONG_MIN'
+			{
+			match("LONG_MIN"); 
+
+			}
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "LONG_MIN"
+
+	// $ANTLR start "LONG_MAX"
+	public final void mLONG_MAX() throws RecognitionException {
+		try {
+			int _type = LONG_MAX;
+			int _channel = DEFAULT_TOKEN_CHANNEL;
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:634:10: ( ( 'LONG_MAX' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:634:12: ( 'LONG_MAX' )
+			{
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:634:12: ( 'LONG_MAX' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:634:13: 'LONG_MAX'
+			{
+			match("LONG_MAX"); 
+
+			}
+
+			}
+
+			state.type = _type;
+			state.channel = _channel;
+		}
+		finally {
+			// do for sure before leaving
+		}
+	}
+	// $ANTLR end "LONG_MAX"
 
 	// $ANTLR start "DURATION"
 	public final void mDURATION() throws RecognitionException {
 		try {
 			int _type = DURATION;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:632:9: ( ( 'DURATION' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:632:11: ( 'DURATION' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:636:9: ( ( 'DURATION' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:636:11: ( 'DURATION' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:632:11: ( 'DURATION' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:632:12: 'DURATION'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:636:11: ( 'DURATION' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:636:12: 'DURATION'
 			{
 			match("DURATION"); 
 
@@ -1352,11 +1406,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = PERIOD;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:633:8: ( ( 'PERIOD' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:633:10: ( 'PERIOD' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:637:8: ( ( 'PERIOD' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:637:10: ( 'PERIOD' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:633:10: ( 'PERIOD' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:633:11: 'PERIOD'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:637:10: ( 'PERIOD' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:637:11: 'PERIOD'
 			{
 			match("PERIOD"); 
 
@@ -1378,11 +1432,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = INCLUDE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:634:9: ( ( 'INCLUDE' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:634:11: ( 'INCLUDE' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:638:9: ( ( 'INCLUDE' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:638:11: ( 'INCLUDE' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:634:11: ( 'INCLUDE' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:634:12: 'INCLUDE'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:638:11: ( 'INCLUDE' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:638:12: 'INCLUDE'
 			{
 			match("INCLUDE"); 
 
@@ -1404,11 +1458,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = WHICH;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:636:7: ( ( 'WHICH' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:636:9: ( 'WHICH' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:640:7: ( ( 'WHICH' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:640:9: ( 'WHICH' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:636:9: ( 'WHICH' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:636:10: 'WHICH'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:640:9: ( 'WHICH' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:640:10: 'WHICH'
 			{
 			match("WHICH"); 
 
@@ -1430,11 +1484,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = CONTAINS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:637:9: ( ( 'CONTAINS' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:637:11: ( 'CONTAINS' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:641:9: ( ( 'CONTAINS' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:641:11: ( 'CONTAINS' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:637:11: ( 'CONTAINS' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:637:12: 'CONTAINS'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:641:11: ( 'CONTAINS' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:641:12: 'CONTAINS'
 			{
 			match("CONTAINS"); 
 
@@ -1456,11 +1510,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = SORT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:638:6: ( ( 'SORT' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:638:8: ( 'SORT' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:6: ( ( 'SORT' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:8: ( 'SORT' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:638:8: ( 'SORT' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:638:9: 'SORT'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:8: ( 'SORT' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:9: 'SORT'
 			{
 			match("SORT"); 
 
@@ -1482,11 +1536,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = HINT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:640:6: ( ( 'HINT' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:640:8: ( 'HINT' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:6: ( ( 'HINT' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:8: ( 'HINT' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:640:8: ( 'HINT' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:640:9: 'HINT'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:8: ( 'HINT' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:9: 'HINT'
 			{
 			match("HINT"); 
 
@@ -1508,10 +1562,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = AS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:5: ( ( 'AS' | 'as' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:7: ( 'AS' | 'as' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:5: ( ( 'AS' | 'as' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:7: ( 'AS' | 'as' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:7: ( 'AS' | 'as' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:7: ( 'AS' | 'as' )
 			int alt15=2;
 			int LA15_0 = input.LA(1);
 			if ( (LA15_0=='A') ) {
@@ -1529,14 +1583,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt15) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:8: 'AS'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:8: 'AS'
 					{
 					match("AS"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:642:13: 'as'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:13: 'as'
 					{
 					match("as"); 
 
@@ -1561,10 +1615,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = FIELD_ACCESS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:643:14: ( ( 'FIELD_ACCESS' | 'field_access' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:643:16: ( 'FIELD_ACCESS' | 'field_access' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:14: ( ( 'FIELD_ACCESS' | 'field_access' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:16: ( 'FIELD_ACCESS' | 'field_access' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:643:16: ( 'FIELD_ACCESS' | 'field_access' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:16: ( 'FIELD_ACCESS' | 'field_access' )
 			int alt16=2;
 			int LA16_0 = input.LA(1);
 			if ( (LA16_0=='F') ) {
@@ -1582,14 +1636,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt16) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:643:17: 'FIELD_ACCESS'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:17: 'FIELD_ACCESS'
 					{
 					match("FIELD_ACCESS"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:643:32: 'field_access'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:32: 'field_access'
 					{
 					match("field_access"); 
 
@@ -1614,10 +1668,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = FROM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:7: ( ( 'FROM' | 'from' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:9: ( 'FROM' | 'from' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:7: ( ( 'FROM' | 'from' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:9: ( 'FROM' | 'from' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:9: ( 'FROM' | 'from' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:9: ( 'FROM' | 'from' )
 			int alt17=2;
 			int LA17_0 = input.LA(1);
 			if ( (LA17_0=='F') ) {
@@ -1635,14 +1689,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt17) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:10: 'FROM'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:10: 'FROM'
 					{
 					match("FROM"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:644:17: 'from'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:17: 'from'
 					{
 					match("from"); 
 
@@ -1667,10 +1721,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = WHERE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:645:8: ( ( 'WHERE' | 'where' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:645:10: ( 'WHERE' | 'where' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:8: ( ( 'WHERE' | 'where' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:10: ( 'WHERE' | 'where' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:645:10: ( 'WHERE' | 'where' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:10: ( 'WHERE' | 'where' )
 			int alt18=2;
 			int LA18_0 = input.LA(1);
 			if ( (LA18_0=='W') ) {
@@ -1688,14 +1742,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt18) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:645:11: 'WHERE'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:11: 'WHERE'
 					{
 					match("WHERE"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:645:19: 'where'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:19: 'where'
 					{
 					match("where"); 
 
@@ -1720,10 +1774,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = BETWEEN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:9: ( ( 'BETWEEN' | 'between' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:11: ( 'BETWEEN' | 'between' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:9: ( ( 'BETWEEN' | 'between' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:11: ( 'BETWEEN' | 'between' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:11: ( 'BETWEEN' | 'between' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:11: ( 'BETWEEN' | 'between' )
 			int alt19=2;
 			int LA19_0 = input.LA(1);
 			if ( (LA19_0=='B') ) {
@@ -1741,14 +1795,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt19) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:12: 'BETWEEN'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:12: 'BETWEEN'
 					{
 					match("BETWEEN"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:646:22: 'between'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:22: 'between'
 					{
 					match("between"); 
 
@@ -1773,10 +1827,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = AND;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:6: ( ( 'AND' | 'and' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:8: ( 'AND' | 'and' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:6: ( ( 'AND' | 'and' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:8: ( 'AND' | 'and' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:8: ( 'AND' | 'and' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:8: ( 'AND' | 'and' )
 			int alt20=2;
 			int LA20_0 = input.LA(1);
 			if ( (LA20_0=='A') ) {
@@ -1794,14 +1848,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt20) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:9: 'AND'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:9: 'AND'
 					{
 					match("AND"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:647:15: 'and'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:15: 'and'
 					{
 					match("and"); 
 
@@ -1826,10 +1880,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = OR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:5: ( ( 'OR' | 'or' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:7: ( 'OR' | 'or' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:5: ( ( 'OR' | 'or' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:7: ( 'OR' | 'or' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:7: ( 'OR' | 'or' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:7: ( 'OR' | 'or' )
 			int alt21=2;
 			int LA21_0 = input.LA(1);
 			if ( (LA21_0=='O') ) {
@@ -1847,14 +1901,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt21) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:8: 'OR'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:8: 'OR'
 					{
 					match("OR"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:648:13: 'or'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:13: 'or'
 					{
 					match("or"); 
 
@@ -1879,10 +1933,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = NOT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:6: ( ( 'NOT' | 'not' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:8: ( 'NOT' | 'not' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:6: ( ( 'NOT' | 'not' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:8: ( 'NOT' | 'not' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:8: ( 'NOT' | 'not' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:8: ( 'NOT' | 'not' )
 			int alt22=2;
 			int LA22_0 = input.LA(1);
 			if ( (LA22_0=='N') ) {
@@ -1900,14 +1954,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt22) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:9: 'NOT'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:9: 'NOT'
 					{
 					match("NOT"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:649:15: 'not'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:15: 'not'
 					{
 					match("not"); 
 
@@ -1932,10 +1986,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = GROUP;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:7: ( ( 'GROUP' | 'group' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:9: ( 'GROUP' | 'group' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:7: ( ( 'GROUP' | 'group' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:9: ( 'GROUP' | 'group' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:9: ( 'GROUP' | 'group' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:9: ( 'GROUP' | 'group' )
 			int alt23=2;
 			int LA23_0 = input.LA(1);
 			if ( (LA23_0=='G') ) {
@@ -1953,14 +2007,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt23) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:10: 'GROUP'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:10: 'GROUP'
 					{
 					match("GROUP"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:650:20: 'group'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:20: 'group'
 					{
 					match("group"); 
 
@@ -1985,10 +2039,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = ASC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:5: ( ( 'ASC' | 'asc' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:7: ( 'ASC' | 'asc' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:5: ( ( 'ASC' | 'asc' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:7: ( 'ASC' | 'asc' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:7: ( 'ASC' | 'asc' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:7: ( 'ASC' | 'asc' )
 			int alt24=2;
 			int LA24_0 = input.LA(1);
 			if ( (LA24_0=='A') ) {
@@ -2006,14 +2060,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt24) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:8: 'ASC'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:8: 'ASC'
 					{
 					match("ASC"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:651:16: 'asc'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:16: 'asc'
 					{
 					match("asc"); 
 
@@ -2038,10 +2092,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DESC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:6: ( ( 'DESC' | 'desc' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:8: ( 'DESC' | 'desc' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:6: ( ( 'DESC' | 'desc' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:8: ( 'DESC' | 'desc' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:8: ( 'DESC' | 'desc' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:8: ( 'DESC' | 'desc' )
 			int alt25=2;
 			int LA25_0 = input.LA(1);
 			if ( (LA25_0=='D') ) {
@@ -2059,14 +2113,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt25) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:9: 'DESC'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:9: 'DESC'
 					{
 					match("DESC"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:652:18: 'desc'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:18: 'desc'
 					{
 					match("desc"); 
 
@@ -2091,10 +2145,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = ORDER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:7: ( ( 'ORDER' | 'order' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:9: ( 'ORDER' | 'order' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:657:7: ( ( 'ORDER' | 'order' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:657:9: ( 'ORDER' | 'order' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:9: ( 'ORDER' | 'order' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:657:9: ( 'ORDER' | 'order' )
 			int alt26=2;
 			int LA26_0 = input.LA(1);
 			if ( (LA26_0=='O') ) {
@@ -2112,14 +2166,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt26) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:10: 'ORDER'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:657:10: 'ORDER'
 					{
 					match("ORDER"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:653:20: 'order'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:657:20: 'order'
 					{
 					match("order"); 
 
@@ -2144,10 +2198,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = HAVING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:8: ( ( 'HAVING' | 'having' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:10: ( 'HAVING' | 'having' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:8: ( ( 'HAVING' | 'having' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:10: ( 'HAVING' | 'having' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:10: ( 'HAVING' | 'having' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:10: ( 'HAVING' | 'having' )
 			int alt27=2;
 			int LA27_0 = input.LA(1);
 			if ( (LA27_0=='H') ) {
@@ -2165,14 +2219,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt27) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:11: 'HAVING'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:11: 'HAVING'
 					{
 					match("HAVING"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:654:22: 'having'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:22: 'having'
 					{
 					match("having"); 
 
@@ -2197,10 +2251,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = BREAK;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:7: ( ( 'BREAK' | 'break' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:9: ( 'BREAK' | 'break' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:7: ( ( 'BREAK' | 'break' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:9: ( 'BREAK' | 'break' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:9: ( 'BREAK' | 'break' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:9: ( 'BREAK' | 'break' )
 			int alt28=2;
 			int LA28_0 = input.LA(1);
 			if ( (LA28_0=='B') ) {
@@ -2218,14 +2272,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt28) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:10: 'BREAK'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:10: 'BREAK'
 					{
 					match("BREAK"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:655:20: 'break'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:20: 'break'
 					{
 					match("break"); 
 
@@ -2250,10 +2304,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = BY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:4: ( ( 'BY' | 'by' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:6: ( 'BY' | 'by' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:4: ( ( 'BY' | 'by' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:6: ( 'BY' | 'by' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:6: ( 'BY' | 'by' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:6: ( 'BY' | 'by' )
 			int alt29=2;
 			int LA29_0 = input.LA(1);
 			if ( (LA29_0=='B') ) {
@@ -2271,14 +2325,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt29) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:7: 'BY'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:7: 'BY'
 					{
 					match("BY"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:656:14: 'by'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:14: 'by'
 					{
 					match("by"); 
 
@@ -2303,10 +2357,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = LIMIT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:7: ( ( 'LIMIT' | 'limit' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:9: ( 'LIMIT' | 'limit' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:662:7: ( ( 'LIMIT' | 'limit' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:662:9: ( 'LIMIT' | 'limit' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:9: ( 'LIMIT' | 'limit' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:662:9: ( 'LIMIT' | 'limit' )
 			int alt30=2;
 			int LA30_0 = input.LA(1);
 			if ( (LA30_0=='L') ) {
@@ -2324,14 +2378,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt30) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:10: 'LIMIT'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:662:10: 'LIMIT'
 					{
 					match("LIMIT"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:658:20: 'limit'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:662:20: 'limit'
 					{
 					match("limit"); 
 
@@ -2356,10 +2410,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = LIKE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:6: ( ( 'LIKE' | 'like' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:8: ( 'LIKE' | 'like' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:663:6: ( ( 'LIKE' | 'like' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:663:8: ( 'LIKE' | 'like' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:8: ( 'LIKE' | 'like' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:663:8: ( 'LIKE' | 'like' )
 			int alt31=2;
 			int LA31_0 = input.LA(1);
 			if ( (LA31_0=='L') ) {
@@ -2377,14 +2431,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt31) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:9: 'LIKE'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:663:9: 'LIKE'
 					{
 					match("LIKE"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:659:18: 'like'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:663:18: 'like'
 					{
 					match("like"); 
 
@@ -2409,10 +2463,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = IN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:5: ( ( 'IN' | 'in' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:7: ( 'IN' | 'in' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:5: ( ( 'IN' | 'in' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:7: ( 'IN' | 'in' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:7: ( 'IN' | 'in' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:7: ( 'IN' | 'in' )
 			int alt32=2;
 			int LA32_0 = input.LA(1);
 			if ( (LA32_0=='I') ) {
@@ -2430,14 +2484,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt32) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:8: 'IN'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:8: 'IN'
 					{
 					match("IN"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:660:15: 'in'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:15: 'in'
 					{
 					match("in"); 
 
@@ -2462,10 +2516,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = THEN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:661:6: ( ( 'THEN' | 'then' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:661:8: ( 'THEN' | 'then' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:665:6: ( ( 'THEN' | 'then' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:665:8: ( 'THEN' | 'then' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:661:8: ( 'THEN' | 'then' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:665:8: ( 'THEN' | 'then' )
 			int alt33=2;
 			int LA33_0 = input.LA(1);
 			if ( (LA33_0=='T') ) {
@@ -2483,14 +2537,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt33) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:661:9: 'THEN'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:665:9: 'THEN'
 					{
 					match("THEN"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:661:18: 'then'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:665:18: 'then'
 					{
 					match("then"); 
 
@@ -2515,10 +2569,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = JAVASCRIPT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:2: ( ( 'JAVASCRIPT:' | 'javascript:' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:5: ( 'JAVASCRIPT:' | 'javascript:' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:668:2: ( ( 'JAVASCRIPT:' | 'javascript:' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:668:5: ( 'JAVASCRIPT:' | 'javascript:' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:5: ( 'JAVASCRIPT:' | 'javascript:' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:668:5: ( 'JAVASCRIPT:' | 'javascript:' )
 			int alt34=2;
 			int LA34_0 = input.LA(1);
 			if ( (LA34_0=='J') ) {
@@ -2536,14 +2590,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt34) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:6: 'JAVASCRIPT:'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:668:6: 'JAVASCRIPT:'
 					{
 					match("JAVASCRIPT:"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:664:21: 'javascript:'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:668:21: 'javascript:'
 					{
 					match("javascript:"); 
 
@@ -2568,10 +2622,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = JOIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:666:7: ( ( 'JOIN' | 'join' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:666:9: ( 'JOIN' | 'join' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:670:7: ( ( 'JOIN' | 'join' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:670:9: ( 'JOIN' | 'join' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:666:9: ( 'JOIN' | 'join' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:670:9: ( 'JOIN' | 'join' )
 			int alt35=2;
 			int LA35_0 = input.LA(1);
 			if ( (LA35_0=='J') ) {
@@ -2589,14 +2643,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt35) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:666:10: 'JOIN'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:670:10: 'JOIN'
 					{
 					match("JOIN"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:666:19: 'join'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:670:19: 'join'
 					{
 					match("join"); 
 
@@ -2621,10 +2675,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = LEFT_JOIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:669:12: ( ( 'LEFT_JOIN' | 'left_join' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:669:14: ( 'LEFT_JOIN' | 'left_join' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:673:12: ( ( 'LEFT_JOIN' | 'left_join' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:673:14: ( 'LEFT_JOIN' | 'left_join' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:669:14: ( 'LEFT_JOIN' | 'left_join' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:673:14: ( 'LEFT_JOIN' | 'left_join' )
 			int alt36=2;
 			int LA36_0 = input.LA(1);
 			if ( (LA36_0=='L') ) {
@@ -2642,14 +2696,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt36) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:669:15: 'LEFT_JOIN'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:673:15: 'LEFT_JOIN'
 					{
 					match("LEFT_JOIN"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:669:29: 'left_join'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:673:29: 'left_join'
 					{
 					match("left_join"); 
 
@@ -2674,10 +2728,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = RIGHT_JOIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:672:13: ( ( 'RIGHT_JOIN' | 'right_join' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:672:15: ( 'RIGHT_JOIN' | 'right_join' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:676:13: ( ( 'RIGHT_JOIN' | 'right_join' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:676:15: ( 'RIGHT_JOIN' | 'right_join' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:672:15: ( 'RIGHT_JOIN' | 'right_join' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:676:15: ( 'RIGHT_JOIN' | 'right_join' )
 			int alt37=2;
 			int LA37_0 = input.LA(1);
 			if ( (LA37_0=='R') ) {
@@ -2695,14 +2749,14 @@ public class druidGLexer extends Lexer {
 
 			switch (alt37) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:672:16: 'RIGHT_JOIN'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:676:16: 'RIGHT_JOIN'
 					{
 					match("RIGHT_JOIN"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:672:31: 'right_join'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:676:31: 'right_join'
 					{
 					match("right_join"); 
 
@@ -2727,11 +2781,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = ON;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:675:5: ( ( 'ON' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:675:7: ( 'ON' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:679:5: ( ( 'ON' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:679:7: ( 'ON' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:675:7: ( 'ON' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:675:8: 'ON'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:679:7: ( 'ON' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:679:8: 'ON'
 			{
 			match("ON"); 
 
@@ -2753,8 +2807,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = OPT_SEMI_COLON;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:680:2: ( ';' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:680:4: ';'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:684:2: ( ';' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:684:4: ';'
 			{
 			match(';'); 
 			}
@@ -2773,8 +2827,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = OPT_AMPERSAND;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:683:2: ( '&' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:683:4: '&'
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:687:2: ( '&' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:687:4: '&'
 			{
 			match('&'); 
 			}
@@ -2793,10 +2847,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:686:2: ( ( ' ' | '\\t' | NEWLINE )+ )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:686:4: ( ' ' | '\\t' | NEWLINE )+
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:690:2: ( ( ' ' | '\\t' | NEWLINE )+ )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:690:4: ( ' ' | '\\t' | NEWLINE )+
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:686:4: ( ' ' | '\\t' | NEWLINE )+
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:690:4: ( ' ' | '\\t' | NEWLINE )+
 			int cnt38=0;
 			loop38:
 			while (true) {
@@ -2821,19 +2875,19 @@ public class druidGLexer extends Lexer {
 				}
 				switch (alt38) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:686:5: ' '
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:690:5: ' '
 					{
 					match(' '); 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:686:11: '\\t'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:690:11: '\\t'
 					{
 					match('\t'); 
 					}
 					break;
 				case 3 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:686:18: NEWLINE
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:690:18: NEWLINE
 					{
 					mNEWLINE(); 
 
@@ -2862,8 +2916,8 @@ public class druidGLexer extends Lexer {
 	// $ANTLR start "DATE_YEAR_ONLY"
 	public final void mDATE_YEAR_ONLY() throws RecognitionException {
 		try {
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:691:2: ( NUM NUM NUM NUM )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:691:4: NUM NUM NUM NUM
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:695:2: ( NUM NUM NUM NUM )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:695:4: NUM NUM NUM NUM
 			{
 			mNUM(); 
 
@@ -2887,8 +2941,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DATE_YEAR_MONTH_ONLY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:694:2: ( DATE_YEAR_ONLY '-' NUM NUM )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:694:4: DATE_YEAR_ONLY '-' NUM NUM
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:698:2: ( DATE_YEAR_ONLY '-' NUM NUM )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:698:4: DATE_YEAR_ONLY '-' NUM NUM
 			{
 			mDATE_YEAR_ONLY(); 
 
@@ -2913,8 +2967,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DATE;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:697:2: ( DATE_YEAR_MONTH_ONLY '-' NUM NUM )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:697:4: DATE_YEAR_MONTH_ONLY '-' NUM NUM
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:701:2: ( DATE_YEAR_MONTH_ONLY '-' NUM NUM )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:701:4: DATE_YEAR_MONTH_ONLY '-' NUM NUM
 			{
 			mDATE_YEAR_MONTH_ONLY(); 
 
@@ -2939,8 +2993,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DATE_HOUR;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:700:2: ( DATE 'T' NUM NUM )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:700:4: DATE 'T' NUM NUM
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:704:2: ( DATE 'T' NUM NUM )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:704:4: DATE 'T' NUM NUM
 			{
 			mDATE(); 
 
@@ -2965,8 +3019,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DATE_HOUR_MIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:703:2: ( DATE_HOUR ':' NUM NUM )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:703:5: DATE_HOUR ':' NUM NUM
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:707:2: ( DATE_HOUR ':' NUM NUM )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:707:5: DATE_HOUR ':' NUM NUM
 			{
 			mDATE_HOUR(); 
 
@@ -2991,8 +3045,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DATE_HOUR_MIN_SEC;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:706:2: ( DATE_HOUR_MIN ':' NUM NUM )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:706:5: DATE_HOUR_MIN ':' NUM NUM
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:710:2: ( DATE_HOUR_MIN ':' NUM NUM )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:710:5: DATE_HOUR_MIN ':' NUM NUM
 			{
 			mDATE_HOUR_MIN(); 
 
@@ -3017,8 +3071,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DATE_HOUR_MIN_SEC_SUB;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:709:2: ( DATE_HOUR_MIN_SEC '.' NUM NUM NUM )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:709:5: DATE_HOUR_MIN_SEC '.' NUM NUM NUM
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:713:2: ( DATE_HOUR_MIN_SEC '.' NUM NUM NUM )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:713:5: DATE_HOUR_MIN_SEC '.' NUM NUM NUM
 			{
 			mDATE_HOUR_MIN_SEC(); 
 
@@ -3045,8 +3099,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DATE_HOUR_MIN_SEC_SUB_TZ;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:712:2: ( DATE_HOUR_MIN_SEC_SUB ( '+' | '-' ) NUM NUM ':' NUM NUM )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:712:5: DATE_HOUR_MIN_SEC_SUB ( '+' | '-' ) NUM NUM ':' NUM NUM
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:716:2: ( DATE_HOUR_MIN_SEC_SUB ( '+' | '-' ) NUM NUM ':' NUM NUM )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:716:5: DATE_HOUR_MIN_SEC_SUB ( '+' | '-' ) NUM NUM ':' NUM NUM
 			{
 			mDATE_HOUR_MIN_SEC_SUB(); 
 
@@ -3083,7 +3137,7 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = DATE_HOUR_MIN_SEC_SUB_UTC_TZ;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:715:2: ( DATE_HOUR_MIN 'Z' | DATE_HOUR_MIN_SEC 'Z' | DATE_HOUR_MIN_SEC_SUB 'Z' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:719:2: ( DATE_HOUR_MIN 'Z' | DATE_HOUR_MIN_SEC 'Z' | DATE_HOUR_MIN_SEC_SUB 'Z' )
 			int alt39=3;
 			int LA39_0 = input.LA(1);
 			if ( ((LA39_0 >= '0' && LA39_0 <= '9')) ) {
@@ -3444,7 +3498,7 @@ public class druidGLexer extends Lexer {
 
 			switch (alt39) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:715:5: DATE_HOUR_MIN 'Z'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:719:5: DATE_HOUR_MIN 'Z'
 					{
 					mDATE_HOUR_MIN(); 
 
@@ -3452,7 +3506,7 @@ public class druidGLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:716:6: DATE_HOUR_MIN_SEC 'Z'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:720:6: DATE_HOUR_MIN_SEC 'Z'
 					{
 					mDATE_HOUR_MIN_SEC(); 
 
@@ -3460,7 +3514,7 @@ public class druidGLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:717:6: DATE_HOUR_MIN_SEC_SUB 'Z'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:721:6: DATE_HOUR_MIN_SEC_SUB 'Z'
 					{
 					mDATE_HOUR_MIN_SEC_SUB(); 
 
@@ -3483,7 +3537,7 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = ARITH_OPER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:720:13: ( ( '*' | '+' | '/' | '-' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:724:13: ( ( '*' | '+' | '/' | '-' ) )
 			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:
 			{
 			if ( (input.LA(1) >= '*' && input.LA(1) <= '+')||input.LA(1)=='-'||input.LA(1)=='/' ) {
@@ -3510,8 +3564,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = EQUALS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:723:9: ( '=' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:723:11: '='
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:727:9: ( '=' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:727:11: '='
 			{
 			match('='); 
 			}
@@ -3530,7 +3584,7 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = COMPARE_OPER;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:725:15: ( ( '<' | '>' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:729:15: ( ( '<' | '>' ) )
 			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:
 			{
 			if ( input.LA(1)=='<'||input.LA(1)=='>' ) {
@@ -3557,8 +3611,8 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:729:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:729:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:733:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:733:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
 				input.consume();
@@ -3568,7 +3622,7 @@ public class druidGLexer extends Lexer {
 				recover(mse);
 				throw mse;
 			}
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:729:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:733:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
 			loop40:
 			while (true) {
 				int alt40=2;
@@ -3611,10 +3665,10 @@ public class druidGLexer extends Lexer {
 	// $ANTLR start "NEWLINE"
 	public final void mNEWLINE() throws RecognitionException {
 		try {
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:733:20: ( ( '\\r\\n' | '\\r' | '\\n' ) )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:733:23: ( '\\r\\n' | '\\r' | '\\n' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:737:20: ( ( '\\r\\n' | '\\r' | '\\n' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:737:23: ( '\\r\\n' | '\\r' | '\\n' )
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:733:23: ( '\\r\\n' | '\\r' | '\\n' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:737:23: ( '\\r\\n' | '\\r' | '\\n' )
 			int alt41=3;
 			int LA41_0 = input.LA(1);
 			if ( (LA41_0=='\r') ) {
@@ -3640,20 +3694,20 @@ public class druidGLexer extends Lexer {
 
 			switch (alt41) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:733:25: '\\r\\n'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:737:25: '\\r\\n'
 					{
 					match("\r\n"); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:734:18: '\\r'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:738:18: '\\r'
 					{
 					match('\r'); 
 					}
 					break;
 				case 3 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:735:18: '\\n'
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:739:18: '\\n'
 					{
 					match('\n'); 
 					}
@@ -3675,11 +3729,11 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = SINGLE_QUOTE_STRING;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:741:5: ( '\\'' ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )* '\\'' )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:741:8: '\\'' ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )* '\\''
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:5: ( '\\'' ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )* '\\'' )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:8: '\\'' ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )* '\\''
 			{
 			match('\''); 
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:741:13: ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )*
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:13: ( ESC_SEQ |~ ( '\\\\' | '\\'' ) )*
 			loop42:
 			while (true) {
 				int alt42=3;
@@ -3693,14 +3747,14 @@ public class druidGLexer extends Lexer {
 
 				switch (alt42) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:741:14: ESC_SEQ
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:14: ESC_SEQ
 					{
 					mESC_SEQ(); 
 
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:741:24: ~ ( '\\\\' | '\\'' )
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:24: ~ ( '\\\\' | '\\'' )
 					{
 					if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '&')||(input.LA(1) >= '(' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
 						input.consume();
@@ -3735,10 +3789,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = LONG;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:744:6: ( ( NUM )+ )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:744:8: ( NUM )+
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:748:6: ( ( NUM )+ )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:748:8: ( NUM )+
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:744:8: ( NUM )+
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:748:8: ( NUM )+
 			int cnt43=0;
 			loop43:
 			while (true) {
@@ -3787,10 +3841,10 @@ public class druidGLexer extends Lexer {
 		try {
 			int _type = FLOAT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:10: ( ( NUM )* '.' ( NUM )+ )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:15: ( NUM )* '.' ( NUM )+
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:749:10: ( ( NUM )* '.' ( NUM )+ )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:749:15: ( NUM )* '.' ( NUM )+
 			{
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:15: ( NUM )*
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:749:15: ( NUM )*
 			loop44:
 			while (true) {
 				int alt44=2;
@@ -3820,7 +3874,7 @@ public class druidGLexer extends Lexer {
 			}
 
 			match('.'); 
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:745:24: ( NUM )+
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:749:24: ( NUM )+
 			int cnt45=0;
 			loop45:
 			while (true) {
@@ -3867,7 +3921,7 @@ public class druidGLexer extends Lexer {
 	// $ANTLR start "NUM"
 	public final void mNUM() throws RecognitionException {
 		try {
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:747:14: ( ( '0' .. '9' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:751:14: ( ( '0' .. '9' ) )
 			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
@@ -3890,7 +3944,7 @@ public class druidGLexer extends Lexer {
 	// $ANTLR start "HEX_DIGIT"
 	public final void mHEX_DIGIT() throws RecognitionException {
 		try {
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:749:20: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:753:20: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
 			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
@@ -3913,7 +3967,7 @@ public class druidGLexer extends Lexer {
 	// $ANTLR start "ESC_SEQ"
 	public final void mESC_SEQ() throws RecognitionException {
 		try {
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:752:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:756:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
 			int alt46=3;
 			int LA46_0 = input.LA(1);
 			if ( (LA46_0=='\\') ) {
@@ -3968,7 +4022,7 @@ public class druidGLexer extends Lexer {
 
 			switch (alt46) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:752:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:756:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
 					{
 					match('\\'); 
 					if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -3982,14 +4036,14 @@ public class druidGLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:753:9: UNICODE_ESC
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:757:9: UNICODE_ESC
 					{
 					mUNICODE_ESC(); 
 
 					}
 					break;
 				case 3 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:754:9: OCTAL_ESC
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:758:9: OCTAL_ESC
 					{
 					mOCTAL_ESC(); 
 
@@ -4007,7 +4061,7 @@ public class druidGLexer extends Lexer {
 	// $ANTLR start "OCTAL_ESC"
 	public final void mOCTAL_ESC() throws RecognitionException {
 		try {
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:758:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:762:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
 			int alt47=3;
 			int LA47_0 = input.LA(1);
 			if ( (LA47_0=='\\') ) {
@@ -4065,7 +4119,7 @@ public class druidGLexer extends Lexer {
 
 			switch (alt47) {
 				case 1 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:758:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:762:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '3') ) {
@@ -4095,7 +4149,7 @@ public class druidGLexer extends Lexer {
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:759:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:763:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '7') ) {
@@ -4117,7 +4171,7 @@ public class druidGLexer extends Lexer {
 					}
 					break;
 				case 3 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:760:9: '\\\\' ( '0' .. '7' )
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:764:9: '\\\\' ( '0' .. '7' )
 					{
 					match('\\'); 
 					if ( (input.LA(1) >= '0' && input.LA(1) <= '7') ) {
@@ -4142,8 +4196,8 @@ public class druidGLexer extends Lexer {
 	// $ANTLR start "UNICODE_ESC"
 	public final void mUNICODE_ESC() throws RecognitionException {
 		try {
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:764:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:764:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:768:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:768:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
 			{
 			match('\\'); 
 			match('u'); 
@@ -4166,35 +4220,35 @@ public class druidGLexer extends Lexer {
 
 	@Override
 	public void mTokens() throws RecognitionException {
-		// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:8: ( T__90 | T__91 | T__92 | T__93 | LPARAN | RPARAN | LCURLY | RCURLY | LSQUARE | RSQUARE | INSERT | INSERT_HADOOP | INSERT_REALTIME | INTO | VALUES | MAX_WINDOW | DELIMITER | PARTITION | ROLLUP | DROP | TABLE | DELETE | KAFKA | STRING | ISO | AUTO_ISO | SELECT | COUNT | LONG_SUM | DOUBLE_SUM | UNIQUE | HYPER_UNIQUE | MIN | MAX | DURATION | PERIOD | INCLUDE | WHICH | CONTAINS | SORT | HINT | AS | FIELD_ACCESS | FROM | WHERE | BETWEEN | AND | OR | NOT | GROUP | ASC | DESC | ORDER | HAVING | BREAK | BY | LIMIT | LIKE | IN | THEN | JAVASCRIPT | JOIN | LEFT_JOIN | RIGHT_JOIN | ON | OPT_SEMI_COLON | OPT_AMPERSAND | WS | DATE_YEAR_MONTH_ONLY | DATE | DATE_HOUR | DATE_HOUR_MIN | DATE_HOUR_MIN_SEC | DATE_HOUR_MIN_SEC_SUB | DATE_HOUR_MIN_SEC_SUB_TZ | DATE_HOUR_MIN_SEC_SUB_UTC_TZ | ARITH_OPER | EQUALS | COMPARE_OPER | ID | SINGLE_QUOTE_STRING | LONG | FLOAT )
-		int alt48=83;
+		// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:8: ( T__92 | T__93 | T__94 | T__95 | LPARAN | RPARAN | LCURLY | RCURLY | LSQUARE | RSQUARE | INSERT | INSERT_HADOOP | INSERT_REALTIME | INTO | VALUES | MAX_WINDOW | DELIMITER | PARTITION | ROLLUP | DROP | TABLE | DELETE | KAFKA | STRING | ISO | AUTO_ISO | SELECT | COUNT | LONG_SUM | DOUBLE_SUM | UNIQUE | HYPER_UNIQUE | DOUBLE_MIN | DOUBLE_MAX | LONG_MIN | LONG_MAX | DURATION | PERIOD | INCLUDE | WHICH | CONTAINS | SORT | HINT | AS | FIELD_ACCESS | FROM | WHERE | BETWEEN | AND | OR | NOT | GROUP | ASC | DESC | ORDER | HAVING | BREAK | BY | LIMIT | LIKE | IN | THEN | JAVASCRIPT | JOIN | LEFT_JOIN | RIGHT_JOIN | ON | OPT_SEMI_COLON | OPT_AMPERSAND | WS | DATE_YEAR_MONTH_ONLY | DATE | DATE_HOUR | DATE_HOUR_MIN | DATE_HOUR_MIN_SEC | DATE_HOUR_MIN_SEC_SUB | DATE_HOUR_MIN_SEC_SUB_TZ | DATE_HOUR_MIN_SEC_SUB_UTC_TZ | ARITH_OPER | EQUALS | COMPARE_OPER | ID | SINGLE_QUOTE_STRING | LONG | FLOAT )
+		int alt48=85;
 		alt48 = dfa48.predict(input);
 		switch (alt48) {
 			case 1 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:10: T__90
-				{
-				mT__90(); 
-
-				}
-				break;
-			case 2 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:16: T__91
-				{
-				mT__91(); 
-
-				}
-				break;
-			case 3 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:22: T__92
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:10: T__92
 				{
 				mT__92(); 
 
 				}
 				break;
-			case 4 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:28: T__93
+			case 2 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:16: T__93
 				{
 				mT__93(); 
+
+				}
+				break;
+			case 3 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:22: T__94
+				{
+				mT__94(); 
+
+				}
+				break;
+			case 4 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:28: T__95
+				{
+				mT__95(); 
 
 				}
 				break;
@@ -4395,357 +4449,371 @@ public class druidGLexer extends Lexer {
 				}
 				break;
 			case 33 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:262: MIN
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:262: DOUBLE_MIN
 				{
-				mMIN(); 
+				mDOUBLE_MIN(); 
 
 				}
 				break;
 			case 34 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:266: MAX
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:273: DOUBLE_MAX
 				{
-				mMAX(); 
+				mDOUBLE_MAX(); 
 
 				}
 				break;
 			case 35 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:270: DURATION
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:284: LONG_MIN
+				{
+				mLONG_MIN(); 
+
+				}
+				break;
+			case 36 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:293: LONG_MAX
+				{
+				mLONG_MAX(); 
+
+				}
+				break;
+			case 37 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:302: DURATION
 				{
 				mDURATION(); 
 
 				}
 				break;
-			case 36 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:279: PERIOD
+			case 38 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:311: PERIOD
 				{
 				mPERIOD(); 
 
 				}
 				break;
-			case 37 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:286: INCLUDE
+			case 39 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:318: INCLUDE
 				{
 				mINCLUDE(); 
 
 				}
 				break;
-			case 38 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:294: WHICH
+			case 40 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:326: WHICH
 				{
 				mWHICH(); 
 
 				}
 				break;
-			case 39 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:300: CONTAINS
+			case 41 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:332: CONTAINS
 				{
 				mCONTAINS(); 
 
 				}
 				break;
-			case 40 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:309: SORT
+			case 42 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:341: SORT
 				{
 				mSORT(); 
 
 				}
 				break;
-			case 41 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:314: HINT
+			case 43 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:346: HINT
 				{
 				mHINT(); 
 
 				}
 				break;
-			case 42 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:319: AS
+			case 44 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:351: AS
 				{
 				mAS(); 
 
 				}
 				break;
-			case 43 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:322: FIELD_ACCESS
+			case 45 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:354: FIELD_ACCESS
 				{
 				mFIELD_ACCESS(); 
 
 				}
 				break;
-			case 44 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:335: FROM
+			case 46 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:367: FROM
 				{
 				mFROM(); 
 
 				}
 				break;
-			case 45 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:340: WHERE
+			case 47 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:372: WHERE
 				{
 				mWHERE(); 
 
 				}
 				break;
-			case 46 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:346: BETWEEN
+			case 48 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:378: BETWEEN
 				{
 				mBETWEEN(); 
 
 				}
 				break;
-			case 47 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:354: AND
+			case 49 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:386: AND
 				{
 				mAND(); 
 
 				}
 				break;
-			case 48 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:358: OR
+			case 50 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:390: OR
 				{
 				mOR(); 
 
 				}
 				break;
-			case 49 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:361: NOT
+			case 51 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:393: NOT
 				{
 				mNOT(); 
 
 				}
 				break;
-			case 50 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:365: GROUP
+			case 52 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:397: GROUP
 				{
 				mGROUP(); 
 
 				}
 				break;
-			case 51 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:371: ASC
+			case 53 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:403: ASC
 				{
 				mASC(); 
 
 				}
 				break;
-			case 52 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:375: DESC
+			case 54 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:407: DESC
 				{
 				mDESC(); 
 
 				}
 				break;
-			case 53 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:380: ORDER
+			case 55 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:412: ORDER
 				{
 				mORDER(); 
 
 				}
 				break;
-			case 54 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:386: HAVING
+			case 56 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:418: HAVING
 				{
 				mHAVING(); 
 
 				}
 				break;
-			case 55 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:393: BREAK
+			case 57 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:425: BREAK
 				{
 				mBREAK(); 
 
 				}
 				break;
-			case 56 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:399: BY
+			case 58 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:431: BY
 				{
 				mBY(); 
 
 				}
 				break;
-			case 57 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:402: LIMIT
+			case 59 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:434: LIMIT
 				{
 				mLIMIT(); 
 
 				}
 				break;
-			case 58 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:408: LIKE
+			case 60 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:440: LIKE
 				{
 				mLIKE(); 
 
 				}
 				break;
-			case 59 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:413: IN
+			case 61 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:445: IN
 				{
 				mIN(); 
 
 				}
 				break;
-			case 60 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:416: THEN
+			case 62 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:448: THEN
 				{
 				mTHEN(); 
 
 				}
 				break;
-			case 61 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:421: JAVASCRIPT
+			case 63 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:453: JAVASCRIPT
 				{
 				mJAVASCRIPT(); 
 
 				}
 				break;
-			case 62 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:432: JOIN
+			case 64 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:464: JOIN
 				{
 				mJOIN(); 
 
 				}
 				break;
-			case 63 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:437: LEFT_JOIN
+			case 65 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:469: LEFT_JOIN
 				{
 				mLEFT_JOIN(); 
 
 				}
 				break;
-			case 64 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:447: RIGHT_JOIN
+			case 66 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:479: RIGHT_JOIN
 				{
 				mRIGHT_JOIN(); 
 
 				}
 				break;
-			case 65 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:458: ON
+			case 67 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:490: ON
 				{
 				mON(); 
 
 				}
 				break;
-			case 66 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:461: OPT_SEMI_COLON
+			case 68 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:493: OPT_SEMI_COLON
 				{
 				mOPT_SEMI_COLON(); 
 
 				}
 				break;
-			case 67 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:476: OPT_AMPERSAND
+			case 69 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:508: OPT_AMPERSAND
 				{
 				mOPT_AMPERSAND(); 
 
 				}
 				break;
-			case 68 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:490: WS
+			case 70 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:522: WS
 				{
 				mWS(); 
 
 				}
 				break;
-			case 69 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:493: DATE_YEAR_MONTH_ONLY
+			case 71 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:525: DATE_YEAR_MONTH_ONLY
 				{
 				mDATE_YEAR_MONTH_ONLY(); 
 
 				}
 				break;
-			case 70 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:514: DATE
+			case 72 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:546: DATE
 				{
 				mDATE(); 
 
 				}
 				break;
-			case 71 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:519: DATE_HOUR
+			case 73 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:551: DATE_HOUR
 				{
 				mDATE_HOUR(); 
 
 				}
 				break;
-			case 72 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:529: DATE_HOUR_MIN
+			case 74 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:561: DATE_HOUR_MIN
 				{
 				mDATE_HOUR_MIN(); 
 
 				}
 				break;
-			case 73 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:543: DATE_HOUR_MIN_SEC
+			case 75 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:575: DATE_HOUR_MIN_SEC
 				{
 				mDATE_HOUR_MIN_SEC(); 
 
 				}
 				break;
-			case 74 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:561: DATE_HOUR_MIN_SEC_SUB
+			case 76 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:593: DATE_HOUR_MIN_SEC_SUB
 				{
 				mDATE_HOUR_MIN_SEC_SUB(); 
 
 				}
 				break;
-			case 75 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:583: DATE_HOUR_MIN_SEC_SUB_TZ
+			case 77 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:615: DATE_HOUR_MIN_SEC_SUB_TZ
 				{
 				mDATE_HOUR_MIN_SEC_SUB_TZ(); 
 
 				}
 				break;
-			case 76 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:608: DATE_HOUR_MIN_SEC_SUB_UTC_TZ
+			case 78 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:640: DATE_HOUR_MIN_SEC_SUB_UTC_TZ
 				{
 				mDATE_HOUR_MIN_SEC_SUB_UTC_TZ(); 
 
 				}
 				break;
-			case 77 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:637: ARITH_OPER
+			case 79 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:669: ARITH_OPER
 				{
 				mARITH_OPER(); 
 
 				}
 				break;
-			case 78 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:648: EQUALS
+			case 80 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:680: EQUALS
 				{
 				mEQUALS(); 
 
 				}
 				break;
-			case 79 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:655: COMPARE_OPER
+			case 81 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:687: COMPARE_OPER
 				{
 				mCOMPARE_OPER(); 
 
 				}
 				break;
-			case 80 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:668: ID
+			case 82 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:700: ID
 				{
 				mID(); 
 
 				}
 				break;
-			case 81 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:671: SINGLE_QUOTE_STRING
+			case 83 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:703: SINGLE_QUOTE_STRING
 				{
 				mSINGLE_QUOTE_STRING(); 
 
 				}
 				break;
-			case 82 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:691: LONG
+			case 84 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:723: LONG
 				{
 				mLONG(); 
 
 				}
 				break;
-			case 83 :
-				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:696: FLOAT
+			case 85 :
+				// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:1:728: FLOAT
 				{
 				mFLOAT(); 
 
@@ -4758,137 +4826,138 @@ public class druidGLexer extends Lexer {
 
 	protected DFA48 dfa48 = new DFA48(this);
 	static final String DFA48_eotS =
-		"\1\uffff\1\74\2\uffff\1\70\5\uffff\47\70\3\uffff\1\u0084\11\uffff\2\u0088"+
-		"\35\70\1\u00ac\13\70\1\u00ac\10\70\1\u00c4\2\70\1\u00c4\1\u00c8\1\u00c9"+
-		"\1\u00c8\13\70\1\uffff\1\u0084\2\70\1\uffff\3\70\1\u00de\2\70\1\u00e2"+
-		"\1\u00e3\32\70\1\u0100\1\uffff\1\u0101\15\70\1\u0100\1\u0101\7\70\1\uffff"+
-		"\3\70\2\uffff\1\70\2\u011a\12\70\1\u0084\1\70\1\u0127\2\70\1\u0127\1\70"+
-		"\1\uffff\3\70\2\uffff\3\70\1\u0131\1\u0132\4\70\1\u0131\1\u0132\10\70"+
-		"\1\u013f\1\70\1\u013f\4\70\1\u0145\1\70\2\uffff\5\70\1\u014c\3\70\1\u0150"+
-		"\4\70\1\u0155\1\70\1\u0155\7\70\1\uffff\4\70\1\u014c\2\70\1\u0164\1\70"+
-		"\1\u0164\1\u0084\1\70\1\uffff\11\70\2\uffff\13\70\1\u017d\1\uffff\1\u017d"+
-		"\2\u017e\2\70\1\uffff\2\70\1\u0183\2\70\1\u0186\1\uffff\3\70\1\uffff\1"+
-		"\70\1\u018b\1\u018c\1\70\1\uffff\1\70\1\u018c\1\70\1\u0190\1\70\1\u0190"+
-		"\2\u0192\2\u0193\1\70\1\u0186\2\70\1\uffff\1\70\1\uffff\1\u0084\1\70\2"+
-		"\u019b\1\70\2\u019e\3\70\1\u01a2\3\70\1\u01a2\1\70\1\u01a7\1\70\1\u01a9"+
-		"\1\70\1\u01a9\1\70\2\uffff\1\u01ac\1\u01ad\1\70\1\u01ad\1\uffff\2\70\1"+
-		"\uffff\1\70\1\u01b2\1\70\1\u01b4\2\uffff\3\70\1\uffff\1\70\2\uffff\1\u01b4"+
-		"\3\70\1\uffff\2\70\1\uffff\1\70\1\u01c2\1\uffff\3\70\1\uffff\4\70\1\uffff"+
-		"\1\70\1\uffff\2\70\2\uffff\4\70\1\uffff\1\70\1\uffff\2\70\2\u01d4\3\70"+
-		"\1\u01d8\1\u01da\4\70\1\uffff\4\70\1\u01e3\5\70\1\u01e9\1\u01ea\1\u01eb"+
-		"\4\70\1\uffff\3\70\3\uffff\6\70\1\u01fa\1\70\1\uffff\1\u01fa\2\u01fc\2"+
-		"\70\3\uffff\1\u01ff\3\70\1\u01ff\2\70\1\uffff\4\70\2\u020a\1\uffff\1\u020b"+
-		"\1\uffff\2\u020c\1\uffff\5\70\1\u0211\4\70\3\uffff\3\70\3\uffff\4\70\1"+
-		"\u021f\2\u0220\1\uffff\1\u0222\1\70\1\u0222\1\70\2\uffff\1\u0225\1\uffff"+
-		"\2\70\2\uffff\2\u022a\2\uffff\1\u022c\4\uffff\1\u0231\4\uffff\1\u0236"+
-		"\2\uffff";
+		"\1\uffff\1\74\2\uffff\1\70\5\uffff\47\70\3\uffff\1\u0083\11\uffff\2\u0087"+
+		"\34\70\1\u00aa\13\70\1\u00aa\10\70\1\u00c2\2\70\1\u00c2\1\u00c6\1\u00c7"+
+		"\1\u00c6\13\70\1\uffff\1\u0083\2\70\1\uffff\3\70\1\u00dc\35\70\1\u00fc"+
+		"\1\uffff\1\u00fd\15\70\1\u00fc\1\u00fd\7\70\1\uffff\3\70\2\uffff\1\70"+
+		"\2\u0116\12\70\1\u0083\1\70\1\u0123\2\70\1\u0123\1\70\1\uffff\6\70\1\u012d"+
+		"\1\u012e\4\70\1\u012d\1\u012e\10\70\1\u013b\1\70\1\u013b\4\70\1\u0141"+
+		"\1\70\2\uffff\5\70\1\u0148\3\70\1\u014c\4\70\1\u0151\1\70\1\u0151\7\70"+
+		"\1\uffff\4\70\1\u0148\2\70\1\u0160\1\70\1\u0160\1\u0083\1\70\1\uffff\11"+
+		"\70\2\uffff\13\70\1\u0179\1\uffff\1\u0179\2\u017a\2\70\1\uffff\2\70\1"+
+		"\u017f\2\70\1\u0183\1\uffff\3\70\1\uffff\1\70\1\u0188\1\u0189\1\70\1\uffff"+
+		"\1\70\1\u0189\1\70\1\u018d\1\70\1\u018d\2\u018f\2\u0190\1\70\1\u0183\2"+
+		"\70\1\uffff\1\70\1\uffff\1\u0083\1\70\2\u0198\1\70\2\u019b\3\70\1\u019f"+
+		"\3\70\1\u019f\1\70\1\u01a4\1\70\1\u01a6\1\70\1\u01a6\1\70\2\uffff\1\u01a9"+
+		"\1\u01aa\1\70\1\u01aa\1\uffff\3\70\1\uffff\1\70\1\u01b1\1\70\1\u01b3\2"+
+		"\uffff\3\70\1\uffff\1\70\2\uffff\1\u01b3\3\70\1\uffff\2\70\1\uffff\1\70"+
+		"\1\u01c1\1\uffff\3\70\1\uffff\4\70\1\uffff\1\70\1\uffff\2\70\2\uffff\6"+
+		"\70\1\uffff\1\70\1\uffff\2\70\2\u01d6\3\70\1\u01da\1\u01dc\4\70\1\uffff"+
+		"\5\70\1\u01e7\5\70\1\u01ed\1\u01ee\1\u01ef\1\u01f0\1\u01f1\4\70\1\uffff"+
+		"\3\70\3\uffff\6\70\1\u0200\3\70\1\uffff\1\u0200\2\u0204\2\70\5\uffff\1"+
+		"\u0207\3\70\1\u0207\2\70\1\uffff\4\70\2\u0212\1\uffff\1\u0213\1\u0214"+
+		"\1\u0215\1\uffff\2\u0216\1\uffff\5\70\1\u021b\4\70\5\uffff\3\70\3\uffff"+
+		"\4\70\1\u0229\2\u022a\1\uffff\1\u022c\1\70\1\u022c\1\70\2\uffff\1\u022f"+
+		"\1\uffff\2\70\2\uffff\2\u0234\2\uffff\1\u0236\4\uffff\1\u023b\4\uffff"+
+		"\1\u0240\2\uffff";
 	static final String DFA48_eofS =
-		"\u0238\uffff";
+		"\u0242\uffff";
 	static final String DFA48_minS =
 		"\1\11\1\52\2\uffff\1\156\5\uffff\1\116\1\101\1\141\1\101\1\141\1\105\1"+
 		"\145\1\101\1\141\1\111\1\151\1\101\1\141\1\101\1\141\1\105\1\116\1\145"+
 		"\1\117\1\105\1\116\1\101\1\110\1\156\1\111\1\151\1\150\1\105\1\145\1\116"+
 		"\1\162\1\117\1\157\1\122\1\162\1\141\1\145\1\101\1\141\3\uffff\1\56\11"+
-		"\uffff\2\60\1\117\1\114\1\154\1\130\1\116\1\170\1\114\1\117\1\125\1\122"+
-		"\1\154\1\157\2\122\1\162\1\114\1\107\1\154\1\147\1\102\1\105\1\142\1\145"+
-		"\1\106\1\146\1\122\1\114\1\122\1\124\1\60\1\104\1\154\2\116\1\113\1\106"+
-		"\1\111\1\120\1\116\1\126\1\105\1\60\1\144\1\105\1\117\1\145\1\157\1\145"+
-		"\1\124\1\105\1\60\1\164\1\145\4\60\1\124\1\164\1\117\1\157\1\166\1\153"+
-		"\1\146\1\126\1\111\1\166\1\151\1\uffff\1\56\2\145\1\uffff\1\105\1\117"+
-		"\1\114\1\60\1\125\1\165\2\60\1\137\1\105\1\103\1\120\1\102\1\101\1\145"+
-		"\1\143\1\160\1\124\1\111\1\164\1\114\1\110\1\154\1\150\1\114\1\116\1\154"+
-		"\1\156\1\113\1\153\1\111\1\105\1\124\1\117\1\60\1\uffff\1\60\1\145\1\116"+
-		"\1\124\1\107\1\111\1\105\1\124\1\121\1\105\1\124\1\111\1\103\1\122\2\60"+
-		"\1\114\1\115\1\154\1\155\1\162\1\127\1\101\1\uffff\1\167\1\141\1\105\2"+
-		"\uffff\1\145\2\60\1\125\1\165\2\151\1\145\1\164\1\101\1\116\1\141\1\156"+
-		"\1\56\1\162\1\60\1\162\1\122\1\60\1\125\1\uffff\1\105\1\145\1\127\2\uffff"+
-		"\1\167\1\115\1\124\2\60\1\114\1\124\1\155\1\164\2\60\1\111\1\117\1\151"+
-		"\1\125\1\124\1\165\1\164\1\105\1\60\1\145\1\60\1\101\1\141\1\116\1\103"+
-		"\1\60\1\137\2\uffff\1\143\1\124\1\101\1\137\1\124\1\60\1\137\1\125\1\122"+
-		"\1\60\1\116\1\110\1\105\1\104\1\60\1\144\1\60\1\145\1\105\1\113\1\145"+
-		"\1\153\1\122\1\162\1\uffff\1\120\1\160\1\156\1\164\1\60\1\137\1\123\1"+
-		"\60\1\163\1\60\1\55\1\166\1\uffff\1\164\1\124\1\104\1\123\1\163\1\111"+
-		"\1\151\1\111\1\105\2\uffff\1\105\1\111\1\151\1\145\1\124\1\104\1\164\1"+
-		"\120\1\137\1\160\1\137\1\60\1\uffff\3\60\1\107\1\124\1\uffff\1\111\1\164"+
-		"\1\60\1\111\1\123\1\60\1\uffff\1\112\1\105\1\137\1\uffff\1\107\2\60\1"+
-		"\137\1\uffff\1\137\1\60\1\105\1\60\1\145\5\60\1\147\1\60\1\152\1\103\1"+
-		"\uffff\1\143\1\60\1\56\1\141\2\60\1\105\2\60\1\116\1\156\1\124\1\60\1"+
-		"\137\1\117\1\164\1\60\1\111\1\60\1\151\1\60\1\112\1\60\1\152\2\uffff\2"+
-		"\60\1\123\1\60\1\uffff\1\116\1\125\1\uffff\1\117\1\60\1\125\1\60\2\uffff"+
-		"\1\101\1\141\1\116\1\uffff\1\156\2\uffff\1\60\1\157\1\122\1\162\1\60\1"+
-		"\154\1\150\1\uffff\1\110\1\60\1\uffff\1\104\1\144\1\105\1\uffff\1\123"+
-		"\1\116\1\145\1\117\1\uffff\1\157\1\uffff\1\117\1\157\2\uffff\1\117\1\123"+
-		"\1\115\1\111\1\uffff\1\116\1\uffff\1\103\1\143\2\60\1\151\1\111\1\151"+
-		"\1\55\1\60\1\141\1\145\1\101\1\105\1\uffff\1\117\1\157\1\122\1\125\1\60"+
-		"\1\162\1\116\1\156\1\111\1\151\3\60\1\116\1\111\1\103\1\143\1\uffff\1"+
+		"\uffff\2\60\1\117\1\114\1\154\1\130\1\170\1\114\1\117\1\125\1\122\1\154"+
+		"\1\157\2\122\1\162\1\114\1\107\1\154\1\147\1\102\1\105\1\142\1\145\1\106"+
+		"\1\146\1\122\1\114\1\122\1\124\1\60\1\104\1\154\2\116\1\113\1\106\1\111"+
+		"\1\120\1\116\1\126\1\105\1\60\1\144\1\105\1\117\1\145\1\157\1\145\1\124"+
+		"\1\105\1\60\1\164\1\145\4\60\1\124\1\164\1\117\1\157\1\166\1\153\1\146"+
+		"\1\126\1\111\1\166\1\151\1\uffff\1\56\2\145\1\uffff\1\105\1\117\1\114"+
+		"\1\60\1\125\1\165\2\137\1\105\1\103\1\120\1\102\1\101\1\145\1\143\1\160"+
+		"\1\124\1\111\1\164\1\114\1\110\1\154\1\150\1\114\1\116\1\154\1\156\1\113"+
+		"\1\153\1\111\1\105\1\124\1\117\1\60\1\uffff\1\60\1\145\1\116\1\124\1\107"+
+		"\1\111\1\105\1\124\1\121\1\105\1\124\1\111\1\103\1\122\2\60\1\114\1\115"+
+		"\1\154\1\155\1\162\1\127\1\101\1\uffff\1\167\1\141\1\105\2\uffff\1\145"+
+		"\2\60\1\125\1\165\2\151\1\145\1\164\1\101\1\116\1\141\1\156\1\56\1\162"+
+		"\1\60\1\162\1\122\1\60\1\125\1\uffff\1\105\1\145\1\127\1\167\1\115\1\124"+
+		"\2\60\1\114\1\124\1\155\1\164\2\60\1\111\1\117\1\151\1\125\1\124\1\165"+
+		"\1\164\1\105\1\60\1\145\1\60\1\101\1\141\1\116\1\103\1\60\1\137\2\uffff"+
+		"\1\143\1\124\1\101\1\137\1\124\1\60\1\137\1\125\1\122\1\60\1\116\1\110"+
+		"\1\105\1\104\1\60\1\144\1\60\1\145\1\105\1\113\1\145\1\153\1\122\1\162"+
+		"\1\uffff\1\120\1\160\1\156\1\164\1\60\1\137\1\123\1\60\1\163\1\60\1\55"+
+		"\1\166\1\uffff\1\164\1\124\1\104\1\123\1\163\1\111\1\151\1\111\1\105\2"+
+		"\uffff\1\105\1\111\1\151\1\145\1\124\1\104\1\164\1\120\1\137\1\160\1\137"+
+		"\1\60\1\uffff\3\60\1\107\1\124\1\uffff\1\111\1\164\1\60\1\111\1\115\1"+
+		"\60\1\uffff\1\112\1\105\1\137\1\uffff\1\107\2\60\1\137\1\uffff\1\137\1"+
+		"\60\1\105\1\60\1\145\5\60\1\147\1\60\1\152\1\103\1\uffff\1\143\1\60\1"+
+		"\56\1\141\2\60\1\105\2\60\1\116\1\156\1\124\1\60\1\137\1\117\1\164\1\60"+
+		"\1\111\1\60\1\151\1\60\1\112\1\60\1\152\2\uffff\2\60\1\123\1\60\1\uffff"+
+		"\1\116\1\125\1\101\1\uffff\1\117\1\60\1\125\1\60\2\uffff\1\101\1\141\1"+
+		"\116\1\uffff\1\156\2\uffff\1\60\1\157\1\122\1\162\1\60\1\154\1\150\1\uffff"+
+		"\1\110\1\60\1\uffff\1\104\1\144\1\105\1\uffff\1\115\1\116\1\145\1\117"+
+		"\1\uffff\1\157\1\uffff\1\117\1\157\2\uffff\1\117\1\123\1\115\1\116\1\130"+
+		"\1\111\1\uffff\1\116\1\uffff\1\103\1\143\2\60\1\151\1\111\1\151\1\55\1"+
+		"\60\1\141\1\145\1\101\1\105\1\uffff\1\117\1\157\1\122\1\125\1\101\1\60"+
+		"\1\162\1\116\1\156\1\111\1\151\5\60\1\116\1\111\1\103\1\143\1\uffff\1"+
 		"\156\1\120\1\160\1\uffff\1\60\1\uffff\1\144\1\141\1\104\1\101\1\127\1"+
-		"\167\1\60\1\115\1\uffff\3\60\1\116\1\156\3\uffff\1\60\1\121\1\105\1\145"+
-		"\1\60\1\124\1\164\1\60\1\157\1\154\1\117\1\114\2\60\1\uffff\1\60\1\uffff"+
-		"\2\60\1\uffff\1\125\1\123\1\163\2\72\1\124\1\157\1\164\1\117\1\124\3\uffff"+
-		"\1\105\1\123\1\163\2\uffff\1\60\1\160\1\151\1\120\1\111\5\60\1\155\1\60"+
-		"\1\115\2\uffff\1\72\1\uffff\1\145\1\105\1\uffff\4\60\1\uffff\1\72\1\uffff"+
-		"\1\60\1\uffff\1\60\1\56\1\uffff\3\60\1\53\2\uffff";
+		"\167\1\60\1\115\1\116\1\130\1\uffff\3\60\1\116\1\156\5\uffff\1\60\1\121"+
+		"\1\105\1\145\1\60\1\124\1\164\1\60\1\157\1\154\1\117\1\114\2\60\1\uffff"+
+		"\3\60\1\uffff\2\60\1\uffff\1\125\1\123\1\163\2\72\1\124\1\157\1\164\1"+
+		"\117\1\124\5\uffff\1\105\1\123\1\163\2\uffff\1\60\1\160\1\151\1\120\1"+
+		"\111\5\60\1\155\1\60\1\115\2\uffff\1\72\1\uffff\1\145\1\105\1\uffff\4"+
+		"\60\1\uffff\1\72\1\uffff\1\60\1\uffff\1\60\1\56\1\uffff\3\60\1\53\2\uffff";
 	static final String DFA48_maxS =
-		"\1\175\1\52\2\uffff\1\156\5\uffff\1\123\1\101\1\141\1\111\1\141\1\125"+
+		"\1\175\1\52\2\uffff\1\156\5\uffff\1\123\1\101\1\141\1\101\1\141\1\125"+
 		"\1\162\1\105\1\141\1\117\1\157\1\110\1\150\1\101\1\141\1\124\1\125\1\145"+
 		"\2\117\1\116\1\131\1\110\1\163\1\122\1\162\1\150\1\131\1\171\1\122\1\162"+
 		"\1\117\1\157\1\122\1\162\1\141\1\151\1\117\1\157\3\uffff\1\71\11\uffff"+
-		"\2\172\1\117\1\114\1\154\1\130\1\116\1\170\1\123\1\117\1\125\1\122\1\163"+
-		"\1\157\2\122\1\162\1\114\1\107\1\154\1\147\1\102\1\105\1\142\1\145\1\106"+
-		"\1\146\1\122\1\114\1\122\1\124\1\172\1\104\1\154\1\125\1\116\1\115\1\106"+
-		"\1\111\1\120\1\116\1\126\1\111\1\172\1\144\1\105\1\117\1\145\1\157\1\145"+
-		"\1\124\1\105\1\172\1\164\1\145\4\172\1\124\1\164\1\117\1\157\1\166\1\155"+
-		"\1\146\1\126\1\111\1\166\1\151\1\uffff\1\71\1\157\1\145\1\uffff\1\105"+
-		"\1\117\1\114\1\172\1\125\1\165\2\172\1\137\1\111\1\103\1\120\1\102\1\101"+
-		"\1\151\1\143\1\160\1\124\1\111\1\164\1\114\1\110\1\154\1\150\1\114\1\116"+
-		"\1\154\1\156\1\113\1\153\1\111\1\105\1\124\1\117\1\172\1\uffff\1\172\1"+
-		"\145\1\116\1\124\1\107\1\111\1\105\1\124\1\121\1\105\1\124\1\111\1\103"+
-		"\1\122\2\172\1\114\1\115\1\154\1\155\1\162\1\127\1\101\1\uffff\1\167\1"+
-		"\141\1\105\2\uffff\1\145\2\172\1\125\1\165\2\151\1\145\1\164\1\101\1\116"+
-		"\1\141\1\156\1\71\1\162\1\172\1\162\1\122\1\172\1\125\1\uffff\1\105\1"+
-		"\145\1\127\2\uffff\1\167\1\115\1\124\2\172\1\114\1\124\1\155\1\164\2\172"+
-		"\1\111\1\117\1\151\1\125\1\124\1\165\1\164\1\105\1\172\1\145\1\172\1\101"+
-		"\1\141\1\116\1\103\1\172\1\137\2\uffff\1\143\1\124\1\101\1\137\1\124\1"+
-		"\172\1\137\1\125\1\122\1\172\1\116\1\110\1\105\1\104\1\172\1\144\1\172"+
-		"\1\145\1\105\1\113\1\145\1\153\1\122\1\162\1\uffff\1\120\1\160\1\156\1"+
-		"\164\1\172\1\137\1\123\1\172\1\163\1\172\1\71\1\166\1\uffff\1\164\1\124"+
-		"\1\104\1\123\1\163\1\111\1\151\1\111\1\105\2\uffff\1\105\1\111\1\151\1"+
-		"\145\1\124\1\104\1\164\1\120\1\137\1\160\1\137\1\172\1\uffff\3\172\1\107"+
-		"\1\124\1\uffff\1\111\1\164\1\172\1\111\1\123\1\172\1\uffff\1\112\1\105"+
-		"\1\137\1\uffff\1\107\2\172\1\137\1\uffff\1\137\1\172\1\105\1\172\1\145"+
-		"\5\172\1\147\1\172\1\152\1\103\1\uffff\1\143\2\71\1\141\2\172\1\105\2"+
-		"\172\1\116\1\156\1\124\1\172\1\137\1\117\1\164\1\172\1\111\1\172\1\151"+
-		"\1\172\1\112\1\172\1\152\2\uffff\2\172\1\123\1\172\1\uffff\1\116\1\125"+
-		"\1\uffff\1\117\1\172\1\125\1\172\2\uffff\1\101\1\141\1\116\1\uffff\1\156"+
-		"\2\uffff\1\172\1\157\1\122\1\162\1\71\1\154\1\162\1\uffff\1\122\1\172"+
-		"\1\uffff\1\104\1\144\1\105\1\uffff\1\123\1\116\1\145\1\117\1\uffff\1\157"+
-		"\1\uffff\1\117\1\157\2\uffff\1\117\1\123\1\115\1\111\1\uffff\1\116\1\uffff"+
+		"\2\172\1\117\1\114\1\154\1\130\1\170\1\123\1\117\1\125\1\122\1\163\1\157"+
+		"\2\122\1\162\1\114\1\107\1\154\1\147\1\102\1\105\1\142\1\145\1\106\1\146"+
+		"\1\122\1\114\1\122\1\124\1\172\1\104\1\154\1\125\1\116\1\115\1\106\1\111"+
+		"\1\120\1\116\1\126\1\111\1\172\1\144\1\105\1\117\1\145\1\157\1\145\1\124"+
+		"\1\105\1\172\1\164\1\145\4\172\1\124\1\164\1\117\1\157\1\166\1\155\1\146"+
+		"\1\126\1\111\1\166\1\151\1\uffff\1\71\1\157\1\145\1\uffff\1\105\1\117"+
+		"\1\114\1\172\1\125\1\165\2\137\1\111\1\103\1\120\1\102\1\101\1\151\1\143"+
+		"\1\160\1\124\1\111\1\164\1\114\1\110\1\154\1\150\1\114\1\116\1\154\1\156"+
+		"\1\113\1\153\1\111\1\105\1\124\1\117\1\172\1\uffff\1\172\1\145\1\116\1"+
+		"\124\1\107\1\111\1\105\1\124\1\121\1\105\1\124\1\111\1\103\1\122\2\172"+
+		"\1\114\1\115\1\154\1\155\1\162\1\127\1\101\1\uffff\1\167\1\141\1\105\2"+
+		"\uffff\1\145\2\172\1\125\1\165\2\151\1\145\1\164\1\101\1\116\1\141\1\156"+
+		"\1\71\1\162\1\172\1\162\1\122\1\172\1\125\1\uffff\1\105\1\145\1\127\1"+
+		"\167\1\115\1\124\2\172\1\114\1\124\1\155\1\164\2\172\1\111\1\117\1\151"+
+		"\1\125\1\124\1\165\1\164\1\105\1\172\1\145\1\172\1\101\1\141\1\116\1\103"+
+		"\1\172\1\137\2\uffff\1\143\1\124\1\101\1\137\1\124\1\172\1\137\1\125\1"+
+		"\122\1\172\1\116\1\110\1\105\1\104\1\172\1\144\1\172\1\145\1\105\1\113"+
+		"\1\145\1\153\1\122\1\162\1\uffff\1\120\1\160\1\156\1\164\1\172\1\137\1"+
+		"\123\1\172\1\163\1\172\1\71\1\166\1\uffff\1\164\1\124\1\104\1\123\1\163"+
+		"\1\111\1\151\1\111\1\105\2\uffff\1\105\1\111\1\151\1\145\1\124\1\104\1"+
+		"\164\1\120\1\137\1\160\1\137\1\172\1\uffff\3\172\1\107\1\124\1\uffff\1"+
+		"\111\1\164\1\172\1\111\1\123\1\172\1\uffff\1\112\1\105\1\137\1\uffff\1"+
+		"\107\2\172\1\137\1\uffff\1\137\1\172\1\105\1\172\1\145\5\172\1\147\1\172"+
+		"\1\152\1\103\1\uffff\1\143\2\71\1\141\2\172\1\105\2\172\1\116\1\156\1"+
+		"\124\1\172\1\137\1\117\1\164\1\172\1\111\1\172\1\151\1\172\1\112\1\172"+
+		"\1\152\2\uffff\2\172\1\123\1\172\1\uffff\1\116\1\125\1\111\1\uffff\1\117"+
+		"\1\172\1\125\1\172\2\uffff\1\101\1\141\1\116\1\uffff\1\156\2\uffff\1\172"+
+		"\1\157\1\122\1\162\1\71\1\154\1\162\1\uffff\1\122\1\172\1\uffff\1\104"+
+		"\1\144\1\105\1\uffff\1\123\1\116\1\145\1\117\1\uffff\1\157\1\uffff\1\117"+
+		"\1\157\2\uffff\1\117\1\123\1\115\1\116\1\130\1\111\1\uffff\1\116\1\uffff"+
 		"\1\103\1\143\2\172\1\151\1\111\1\151\1\55\1\172\1\141\1\145\1\101\1\105"+
-		"\1\uffff\1\117\1\157\1\122\1\125\1\172\1\162\1\116\1\156\1\111\1\151\3"+
-		"\172\1\116\1\111\1\103\1\143\1\uffff\1\156\1\120\1\160\1\uffff\1\71\1"+
-		"\uffff\1\144\1\141\1\104\1\101\1\127\1\167\1\172\1\115\1\uffff\3\172\1"+
-		"\116\1\156\3\uffff\1\172\1\121\1\105\1\145\1\172\1\124\1\164\1\71\1\157"+
-		"\1\154\1\117\1\114\2\172\1\uffff\1\172\1\uffff\2\172\1\uffff\1\125\1\123"+
-		"\1\163\2\72\1\124\1\157\1\164\1\117\1\124\3\uffff\1\105\1\123\1\163\2"+
-		"\uffff\1\71\1\160\1\151\1\120\1\111\3\172\1\71\1\172\1\155\1\172\1\115"+
-		"\2\uffff\1\72\1\uffff\1\145\1\105\1\uffff\1\71\2\172\1\71\1\uffff\1\132"+
-		"\1\uffff\1\71\1\uffff\1\71\1\132\1\uffff\3\71\1\132\2\uffff";
+		"\1\uffff\1\117\1\157\1\122\1\125\1\111\1\172\1\162\1\116\1\156\1\111\1"+
+		"\151\5\172\1\116\1\111\1\103\1\143\1\uffff\1\156\1\120\1\160\1\uffff\1"+
+		"\71\1\uffff\1\144\1\141\1\104\1\101\1\127\1\167\1\172\1\115\1\116\1\130"+
+		"\1\uffff\3\172\1\116\1\156\5\uffff\1\172\1\121\1\105\1\145\1\172\1\124"+
+		"\1\164\1\71\1\157\1\154\1\117\1\114\2\172\1\uffff\3\172\1\uffff\2\172"+
+		"\1\uffff\1\125\1\123\1\163\2\72\1\124\1\157\1\164\1\117\1\124\5\uffff"+
+		"\1\105\1\123\1\163\2\uffff\1\71\1\160\1\151\1\120\1\111\3\172\1\71\1\172"+
+		"\1\155\1\172\1\115\2\uffff\1\72\1\uffff\1\145\1\105\1\uffff\1\71\2\172"+
+		"\1\71\1\uffff\1\132\1\uffff\1\71\1\uffff\1\71\1\132\1\uffff\3\71\1\132"+
+		"\2\uffff";
 	static final String DFA48_acceptS =
-		"\2\uffff\1\2\1\3\1\uffff\1\6\1\7\1\10\1\11\1\12\47\uffff\1\102\1\103\1"+
-		"\104\1\uffff\1\115\1\116\1\117\1\120\1\121\1\123\1\1\1\5\1\2\106\uffff"+
-		"\1\122\3\uffff\1\73\43\uffff\1\52\27\uffff\1\70\3\uffff\1\60\1\101\24"+
-		"\uffff\1\31\3\uffff\1\42\1\41\34\uffff\1\63\1\57\30\uffff\1\61\14\uffff"+
-		"\1\16\11\uffff\1\64\1\24\14\uffff\1\74\5\uffff\1\50\6\uffff\1\72\3\uffff"+
-		"\1\51\4\uffff\1\54\16\uffff\1\76\30\uffff\1\25\1\27\4\uffff\1\34\2\uffff"+
-		"\1\71\4\uffff\1\46\1\55\3\uffff\1\67\1\uffff\1\65\1\62\7\uffff\1\13\2"+
-		"\uffff\1\17\3\uffff\1\26\4\uffff\1\44\1\uffff\1\23\2\uffff\1\30\1\33\4"+
-		"\uffff\1\37\1\uffff\1\66\15\uffff\1\45\21\uffff\1\56\3\uffff\1\105\1\uffff"+
-		"\1\4\10\uffff\1\43\5\uffff\1\32\1\47\1\35\16\uffff\1\21\1\uffff\1\22\2"+
-		"\uffff\1\77\12\uffff\1\20\1\36\1\100\3\uffff\1\75\1\106\15\uffff\1\40"+
-		"\1\53\1\uffff\1\14\2\uffff\1\107\4\uffff\1\15\1\uffff\1\110\1\uffff\1"+
-		"\114\2\uffff\1\111\4\uffff\1\112\1\113";
+		"\2\uffff\1\2\1\3\1\uffff\1\6\1\7\1\10\1\11\1\12\47\uffff\1\104\1\105\1"+
+		"\106\1\uffff\1\117\1\120\1\121\1\122\1\123\1\125\1\1\1\5\1\2\105\uffff"+
+		"\1\124\3\uffff\1\75\42\uffff\1\54\27\uffff\1\72\3\uffff\1\62\1\103\24"+
+		"\uffff\1\31\37\uffff\1\65\1\61\30\uffff\1\63\14\uffff\1\16\11\uffff\1"+
+		"\66\1\24\14\uffff\1\76\5\uffff\1\52\6\uffff\1\74\3\uffff\1\53\4\uffff"+
+		"\1\56\16\uffff\1\100\30\uffff\1\25\1\27\4\uffff\1\34\3\uffff\1\73\4\uffff"+
+		"\1\50\1\57\3\uffff\1\71\1\uffff\1\67\1\64\7\uffff\1\13\2\uffff\1\17\3"+
+		"\uffff\1\26\4\uffff\1\46\1\uffff\1\23\2\uffff\1\30\1\33\6\uffff\1\37\1"+
+		"\uffff\1\70\15\uffff\1\47\24\uffff\1\60\3\uffff\1\107\1\uffff\1\4\12\uffff"+
+		"\1\45\5\uffff\1\32\1\51\1\35\1\43\1\44\16\uffff\1\21\3\uffff\1\22\2\uffff"+
+		"\1\101\12\uffff\1\20\1\36\1\41\1\42\1\102\3\uffff\1\77\1\110\15\uffff"+
+		"\1\40\1\55\1\uffff\1\14\2\uffff\1\111\4\uffff\1\15\1\uffff\1\112\1\uffff"+
+		"\1\116\2\uffff\1\113\4\uffff\1\114\1\115";
 	static final String DFA48_specialS =
-		"\u0238\uffff}>";
+		"\u0242\uffff}>";
 	static final String[] DFA48_transitionS = {
 			"\2\63\2\uffff\1\63\22\uffff\1\63\5\uffff\1\62\1\71\1\1\1\5\1\2\1\65\1"+
 			"\3\1\65\1\72\1\65\12\64\1\uffff\1\61\1\67\1\66\1\67\2\uffff\1\32\1\45"+
@@ -4909,69 +4978,70 @@ public class druidGLexer extends Lexer {
 			"\1\77\4\uffff\1\100",
 			"\1\101",
 			"\1\102",
-			"\1\103\7\uffff\1\104",
-			"\1\105",
-			"\1\106\11\uffff\1\110\2\uffff\1\107\2\uffff\1\111",
-			"\1\112\14\uffff\1\113",
-			"\1\114\3\uffff\1\115",
-			"\1\116",
-			"\1\120\5\uffff\1\117",
-			"\1\122\5\uffff\1\121",
-			"\1\123\6\uffff\1\124",
-			"\1\125\6\uffff\1\126",
+			"\1\103",
+			"\1\104",
+			"\1\105\11\uffff\1\107\2\uffff\1\106\2\uffff\1\110",
+			"\1\111\14\uffff\1\112",
+			"\1\113\3\uffff\1\114",
+			"\1\115",
+			"\1\117\5\uffff\1\116",
+			"\1\121\5\uffff\1\120",
+			"\1\122\6\uffff\1\123",
+			"\1\124\6\uffff\1\125",
+			"\1\126",
 			"\1\127",
-			"\1\130",
-			"\1\132\11\uffff\1\133\4\uffff\1\131",
-			"\1\136\4\uffff\1\135\1\uffff\1\134",
+			"\1\131\11\uffff\1\132\4\uffff\1\130",
+			"\1\135\4\uffff\1\134\1\uffff\1\133",
+			"\1\136",
 			"\1\137",
-			"\1\140",
-			"\1\143\3\uffff\1\142\5\uffff\1\141",
-			"\1\144",
-			"\1\147\7\uffff\1\146\17\uffff\1\145",
-			"\1\150",
-			"\1\152\4\uffff\1\151",
-			"\1\153\10\uffff\1\154",
-			"\1\155\10\uffff\1\156",
-			"\1\157",
-			"\1\160\14\uffff\1\161\6\uffff\1\162",
-			"\1\163\14\uffff\1\164\6\uffff\1\165",
-			"\1\167\3\uffff\1\166",
+			"\1\142\3\uffff\1\141\5\uffff\1\140",
+			"\1\143",
+			"\1\146\7\uffff\1\145\17\uffff\1\144",
+			"\1\147",
+			"\1\151\4\uffff\1\150",
+			"\1\152\10\uffff\1\153",
+			"\1\154\10\uffff\1\155",
+			"\1\156",
+			"\1\157\14\uffff\1\160\6\uffff\1\161",
+			"\1\162\14\uffff\1\163\6\uffff\1\164",
+			"\1\166\3\uffff\1\165",
+			"\1\167",
 			"\1\170",
 			"\1\171",
 			"\1\172",
 			"\1\173",
 			"\1\174",
-			"\1\175",
-			"\1\177\3\uffff\1\176",
-			"\1\u0080\15\uffff\1\u0081",
-			"\1\u0082\15\uffff\1\u0083",
+			"\1\176\3\uffff\1\175",
+			"\1\177\15\uffff\1\u0080",
+			"\1\u0081\15\uffff\1\u0082",
 			"",
 			"",
 			"",
-			"\1\72\1\uffff\12\u0085",
-			"",
-			"",
-			"",
+			"\1\72\1\uffff\12\u0084",
 			"",
 			"",
 			"",
 			"",
 			"",
 			"",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\22\70\1\u0087\1\u0086\6\70",
-			"\12\70\7\uffff\2\70\1\u008b\17\70\1\u0089\1\u008a\6\70\4\uffff\1\70"+
+			"",
+			"",
+			"",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\22\70\1\u0086\1\u0085\6\70",
+			"\12\70\7\uffff\2\70\1\u008a\17\70\1\u0088\1\u0089\6\70\4\uffff\1\70"+
 			"\1\uffff\32\70",
+			"\1\u008b",
 			"\1\u008c",
 			"\1\u008d",
 			"\1\u008e",
 			"\1\u008f",
-			"\1\u0090",
-			"\1\u0091",
-			"\1\u0092\6\uffff\1\u0093",
+			"\1\u0090\6\uffff\1\u0091",
+			"\1\u0092",
+			"\1\u0093",
 			"\1\u0094",
-			"\1\u0095",
-			"\1\u0096",
-			"\1\u0097\6\uffff\1\u0098",
+			"\1\u0095\6\uffff\1\u0096",
+			"\1\u0097",
+			"\1\u0098",
 			"\1\u0099",
 			"\1\u009a",
 			"\1\u009b",
@@ -4988,67 +5058,68 @@ public class druidGLexer extends Lexer {
 			"\1\u00a6",
 			"\1\u00a7",
 			"\1\u00a8",
-			"\1\u00a9",
-			"\1\u00aa",
-			"\12\70\7\uffff\2\70\1\u00ab\27\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u00ad",
-			"\1\u00ae",
-			"\1\u00b0\6\uffff\1\u00af",
-			"\1\u00b1",
-			"\1\u00b3\1\uffff\1\u00b2",
+			"\12\70\7\uffff\2\70\1\u00a9\27\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u00ab",
+			"\1\u00ac",
+			"\1\u00ae\6\uffff\1\u00ad",
+			"\1\u00af",
+			"\1\u00b1\1\uffff\1\u00b0",
+			"\1\u00b2",
+			"\1\u00b3",
 			"\1\u00b4",
 			"\1\u00b5",
 			"\1\u00b6",
-			"\1\u00b7",
-			"\1\u00b8",
-			"\1\u00ba\3\uffff\1\u00b9",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\2\70\1\u00bb\27\70",
+			"\1\u00b8\3\uffff\1\u00b7",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\2\70\1\u00b9\27\70",
+			"\1\u00ba",
+			"\1\u00bb",
 			"\1\u00bc",
 			"\1\u00bd",
 			"\1\u00be",
 			"\1\u00bf",
 			"\1\u00c0",
 			"\1\u00c1",
-			"\1\u00c2",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u00c3",
+			"\1\u00c4",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u00c5",
-			"\1\u00c6",
+			"\12\70\7\uffff\3\70\1\u00c5\26\70\4\uffff\1\70\1\uffff\32\70",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\3\70\1\u00c7\26\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\3\70\1\u00ca\26\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\3\70\1\u00c8\26\70",
+			"\1\u00c9",
+			"\1\u00ca",
 			"\1\u00cb",
 			"\1\u00cc",
 			"\1\u00cd",
-			"\1\u00ce",
-			"\1\u00cf",
-			"\1\u00d1\1\uffff\1\u00d0",
+			"\1\u00cf\1\uffff\1\u00ce",
+			"\1\u00d0",
+			"\1\u00d1",
 			"\1\u00d2",
 			"\1\u00d3",
 			"\1\u00d4",
-			"\1\u00d5",
-			"\1\u00d6",
 			"",
-			"\1\72\1\uffff\12\u00d7",
-			"\1\u00d8\11\uffff\1\u00d9",
+			"\1\72\1\uffff\12\u00d5",
+			"\1\u00d6\11\uffff\1\u00d7",
+			"\1\u00d8",
+			"",
+			"\1\u00d9",
 			"\1\u00da",
-			"",
 			"\1\u00db",
-			"\1\u00dc",
-			"\1\u00dd",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u00dd",
+			"\1\u00de",
 			"\1\u00df",
 			"\1\u00e0",
-			"\12\70\7\uffff\32\70\4\uffff\1\u00e1\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u00e2\3\uffff\1\u00e1",
+			"\1\u00e3",
 			"\1\u00e4",
-			"\1\u00e6\3\uffff\1\u00e5",
-			"\1\u00e7",
-			"\1\u00e8",
+			"\1\u00e5",
+			"\1\u00e6",
+			"\1\u00e8\3\uffff\1\u00e7",
 			"\1\u00e9",
 			"\1\u00ea",
-			"\1\u00ec\3\uffff\1\u00eb",
+			"\1\u00eb",
+			"\1\u00ec",
 			"\1\u00ed",
 			"\1\u00ee",
 			"\1\u00ef",
@@ -5064,13 +5135,13 @@ public class druidGLexer extends Lexer {
 			"\1\u00f9",
 			"\1\u00fa",
 			"\1\u00fb",
-			"\1\u00fc",
-			"\1\u00fd",
-			"\1\u00fe",
-			"\1\u00ff",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u00fe",
+			"\1\u00ff",
+			"\1\u0100",
+			"\1\u0101",
 			"\1\u0102",
 			"\1\u0103",
 			"\1\u0104",
@@ -5080,83 +5151,81 @@ public class druidGLexer extends Lexer {
 			"\1\u0108",
 			"\1\u0109",
 			"\1\u010a",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u010b",
 			"\1\u010c",
 			"\1\u010d",
 			"\1\u010e",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u010f",
 			"\1\u0110",
 			"\1\u0111",
+			"",
 			"\1\u0112",
 			"\1\u0113",
 			"\1\u0114",
-			"\1\u0115",
 			"",
-			"\1\u0116",
+			"",
+			"\1\u0115",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0117",
 			"\1\u0118",
-			"",
-			"",
 			"\1\u0119",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u011a",
 			"\1\u011b",
 			"\1\u011c",
 			"\1\u011d",
 			"\1\u011e",
 			"\1\u011f",
 			"\1\u0120",
-			"\1\u0121",
+			"\1\72\1\uffff\12\u0121",
 			"\1\u0122",
-			"\1\u0123",
-			"\1\u0124",
-			"\1\72\1\uffff\12\u0125",
-			"\1\u0126",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u0124",
+			"\1\u0125",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u0126",
+			"",
+			"\1\u0127",
 			"\1\u0128",
 			"\1\u0129",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u012a",
-			"",
 			"\1\u012b",
 			"\1\u012c",
-			"\1\u012d",
-			"",
-			"",
-			"\1\u012e",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u012f",
 			"\1\u0130",
+			"\1\u0131",
+			"\1\u0132",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0133",
 			"\1\u0134",
 			"\1\u0135",
 			"\1\u0136",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0137",
 			"\1\u0138",
 			"\1\u0139",
 			"\1\u013a",
-			"\1\u013b",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u013c",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u013d",
 			"\1\u013e",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u013f",
 			"\1\u0140",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0141",
 			"\1\u0142",
+			"",
+			"",
 			"\1\u0143",
 			"\1\u0144",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u0145",
 			"\1\u0146",
-			"",
-			"",
 			"\1\u0147",
-			"\1\u0148",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0149",
 			"\1\u014a",
 			"\1\u014b",
@@ -5164,46 +5233,46 @@ public class druidGLexer extends Lexer {
 			"\1\u014d",
 			"\1\u014e",
 			"\1\u014f",
+			"\1\u0150",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0151",
 			"\1\u0152",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0153",
 			"\1\u0154",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u0155",
 			"\1\u0156",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0157",
 			"\1\u0158",
 			"\1\u0159",
+			"",
 			"\1\u015a",
 			"\1\u015b",
 			"\1\u015c",
 			"\1\u015d",
-			"",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u015e",
 			"\1\u015f",
-			"\1\u0160",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0161",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0162",
-			"\1\u0163",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0165",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0166\1\72\1\uffff\12\u0167",
-			"\1\u0168",
+			"\1\u0162\1\72\1\uffff\12\u0163",
+			"\1\u0164",
 			"",
+			"\1\u0165",
+			"\1\u0166",
+			"\1\u0167",
+			"\1\u0168",
 			"\1\u0169",
 			"\1\u016a",
 			"\1\u016b",
 			"\1\u016c",
 			"\1\u016d",
+			"",
+			"",
 			"\1\u016e",
 			"\1\u016f",
 			"\1\u0170",
 			"\1\u0171",
-			"",
-			"",
 			"\1\u0172",
 			"\1\u0173",
 			"\1\u0174",
@@ -5211,112 +5280,109 @@ public class druidGLexer extends Lexer {
 			"\1\u0176",
 			"\1\u0177",
 			"\1\u0178",
-			"\1\u0179",
-			"\1\u017a",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u017b",
 			"\1\u017c",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"",
+			"\1\u017d",
+			"\1\u017e",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u017f",
 			"\1\u0180",
-			"",
-			"\1\u0181",
-			"\1\u0182",
+			"\1\u0182\5\uffff\1\u0181",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"",
 			"\1\u0184",
 			"\1\u0185",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u0186",
 			"",
 			"\1\u0187",
-			"\1\u0188",
-			"\1\u0189",
-			"",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u018a",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u018d",
 			"",
+			"\1\u018b",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u018c",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u018e",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u018f",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0191",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0194",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0195",
-			"\1\u0196",
+			"\1\u0192",
+			"\1\u0193",
 			"",
-			"\1\u0197",
-			"\12\u0198",
-			"\1\72\1\uffff\12\u0167",
-			"\1\u0199",
-			"\12\70\7\uffff\32\70\4\uffff\1\u019a\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\u019c\1\uffff\32\70",
+			"\1\u0194",
+			"\12\u0195",
+			"\1\72\1\uffff\12\u0163",
+			"\1\u0196",
+			"\12\70\7\uffff\32\70\4\uffff\1\u0197\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\u0199\1\uffff\32\70",
+			"\1\u019a",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u019c",
 			"\1\u019d",
+			"\1\u019e",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u019f",
 			"\1\u01a0",
 			"\1\u01a1",
+			"\1\u01a2",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u01a3",
-			"\1\u01a4",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u01a5",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u01a6",
+			"\1\u01a7",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u01a8",
+			"",
+			"",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u01aa",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u01ab",
-			"",
-			"",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u01ae",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"",
-			"\1\u01af",
+			"\1\u01ac",
+			"\1\u01ad",
+			"\1\u01af\7\uffff\1\u01ae",
+			"",
 			"\1\u01b0",
-			"",
-			"\1\u01b1",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u01b3",
+			"\1\u01b2",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"",
 			"",
+			"\1\u01b4",
 			"\1\u01b5",
 			"\1\u01b6",
+			"",
 			"\1\u01b7",
 			"",
-			"\1\u01b8",
-			"",
 			"",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u01b8",
 			"\1\u01b9",
 			"\1\u01ba",
-			"\1\u01bb",
-			"\12\u01bc",
-			"\1\u01bd",
-			"\1\u01be\11\uffff\1\u01bf",
+			"\12\u01bb",
+			"\1\u01bc",
+			"\1\u01bd\11\uffff\1\u01be",
 			"",
-			"\1\u01c0\11\uffff\1\u01c1",
+			"\1\u01bf\11\uffff\1\u01c0",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"",
+			"\1\u01c2",
 			"\1\u01c3",
 			"\1\u01c4",
-			"\1\u01c5",
 			"",
-			"\1\u01c6",
+			"\1\u01c6\5\uffff\1\u01c5",
 			"\1\u01c7",
 			"\1\u01c8",
 			"\1\u01c9",
@@ -5331,138 +5397,151 @@ public class druidGLexer extends Lexer {
 			"\1\u01ce",
 			"\1\u01cf",
 			"\1\u01d0",
-			"",
 			"\1\u01d1",
-			"",
 			"\1\u01d2",
+			"",
 			"\1\u01d3",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"",
+			"\1\u01d4",
 			"\1\u01d5",
-			"\1\u01d6",
-			"\1\u01d7",
-			"\1\u01d9",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u01d7",
+			"\1\u01d8",
+			"\1\u01d9",
 			"\1\u01db",
-			"\1\u01dc",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u01dd",
 			"\1\u01de",
-			"",
 			"\1\u01df",
 			"\1\u01e0",
+			"",
 			"\1\u01e1",
 			"\1\u01e2",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u01e3",
 			"\1\u01e4",
-			"\1\u01e5",
-			"\1\u01e6",
-			"\1\u01e7",
+			"\1\u01e6\7\uffff\1\u01e5",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u01e8",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u01e9",
+			"\1\u01ea",
+			"\1\u01eb",
 			"\1\u01ec",
-			"\1\u01ed",
-			"\1\u01ee",
-			"\1\u01ef",
-			"",
-			"\1\u01f0",
-			"\1\u01f1",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u01f2",
-			"",
-			"\12\u01f3",
-			"",
+			"\1\u01f3",
 			"\1\u01f4",
 			"\1\u01f5",
+			"",
 			"\1\u01f6",
 			"\1\u01f7",
 			"\1\u01f8",
-			"\1\u01f9",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u01fb",
 			"",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\u01f9",
+			"",
+			"\1\u01fa",
+			"\1\u01fb",
+			"\1\u01fc",
 			"\1\u01fd",
 			"\1\u01fe",
-			"",
-			"",
-			"",
+			"\1\u01ff",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0200",
 			"\1\u0201",
 			"\1\u0202",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0203",
-			"\1\u0204",
-			"\12\u0205",
+			"",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u0205",
 			"\1\u0206",
-			"\1\u0207",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\1\u0208",
 			"\1\u0209",
+			"\1\u020a",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"",
-			"\1\u020d",
+			"\1\u020b",
+			"\1\u020c",
+			"\12\u020d",
 			"\1\u020e",
 			"\1\u020f",
 			"\1\u0210",
-			"\1\u0210",
-			"\1\u0212",
-			"\1\u0213",
-			"\1\u0214",
-			"\1\u0215",
-			"\1\u0216",
+			"\1\u0211",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"",
 			"\1\u0217",
 			"\1\u0218",
 			"\1\u0219",
-			"",
-			"",
-			"\12\u021a",
-			"\1\u021b",
+			"\1\u021a",
+			"\1\u021a",
 			"\1\u021c",
 			"\1\u021d",
 			"\1\u021e",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\12\u0221",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u021f",
+			"\1\u0220",
+			"",
+			"",
+			"",
+			"",
+			"",
+			"\1\u0221",
+			"\1\u0222",
 			"\1\u0223",
-			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
-			"\1\u0224",
 			"",
 			"",
+			"\12\u0224",
+			"\1\u0225",
 			"\1\u0226",
-			"",
 			"\1\u0227",
 			"\1\u0228",
-			"",
-			"\12\u0229",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\12\u022b",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u022d",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\1\u022e",
 			"",
-			"\1\u022d\37\uffff\1\u022e",
 			"",
-			"\12\u022f",
+			"\1\u0230",
 			"",
-			"\12\u0230",
-			"\1\u0232\53\uffff\1\u022e",
+			"\1\u0231",
+			"\1\u0232",
 			"",
 			"\12\u0233",
-			"\12\u0234",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
+			"\12\70\7\uffff\32\70\4\uffff\1\70\1\uffff\32\70",
 			"\12\u0235",
-			"\1\u0237\1\uffff\1\u0237\54\uffff\1\u022e",
+			"",
+			"\1\u0237\37\uffff\1\u0238",
+			"",
+			"\12\u0239",
+			"",
+			"\12\u023a",
+			"\1\u023c\53\uffff\1\u0238",
+			"",
+			"\12\u023d",
+			"\12\u023e",
+			"\12\u023f",
+			"\1\u0241\1\uffff\1\u0241\54\uffff\1\u0238",
 			"",
 			""
 	};
@@ -5498,7 +5577,7 @@ public class druidGLexer extends Lexer {
 		}
 		@Override
 		public String getDescription() {
-			return "1:1: Tokens : ( T__90 | T__91 | T__92 | T__93 | LPARAN | RPARAN | LCURLY | RCURLY | LSQUARE | RSQUARE | INSERT | INSERT_HADOOP | INSERT_REALTIME | INTO | VALUES | MAX_WINDOW | DELIMITER | PARTITION | ROLLUP | DROP | TABLE | DELETE | KAFKA | STRING | ISO | AUTO_ISO | SELECT | COUNT | LONG_SUM | DOUBLE_SUM | UNIQUE | HYPER_UNIQUE | MIN | MAX | DURATION | PERIOD | INCLUDE | WHICH | CONTAINS | SORT | HINT | AS | FIELD_ACCESS | FROM | WHERE | BETWEEN | AND | OR | NOT | GROUP | ASC | DESC | ORDER | HAVING | BREAK | BY | LIMIT | LIKE | IN | THEN | JAVASCRIPT | JOIN | LEFT_JOIN | RIGHT_JOIN | ON | OPT_SEMI_COLON | OPT_AMPERSAND | WS | DATE_YEAR_MONTH_ONLY | DATE | DATE_HOUR | DATE_HOUR_MIN | DATE_HOUR_MIN_SEC | DATE_HOUR_MIN_SEC_SUB | DATE_HOUR_MIN_SEC_SUB_TZ | DATE_HOUR_MIN_SEC_SUB_UTC_TZ | ARITH_OPER | EQUALS | COMPARE_OPER | ID | SINGLE_QUOTE_STRING | LONG | FLOAT );";
+			return "1:1: Tokens : ( T__92 | T__93 | T__94 | T__95 | LPARAN | RPARAN | LCURLY | RCURLY | LSQUARE | RSQUARE | INSERT | INSERT_HADOOP | INSERT_REALTIME | INTO | VALUES | MAX_WINDOW | DELIMITER | PARTITION | ROLLUP | DROP | TABLE | DELETE | KAFKA | STRING | ISO | AUTO_ISO | SELECT | COUNT | LONG_SUM | DOUBLE_SUM | UNIQUE | HYPER_UNIQUE | DOUBLE_MIN | DOUBLE_MAX | LONG_MIN | LONG_MAX | DURATION | PERIOD | INCLUDE | WHICH | CONTAINS | SORT | HINT | AS | FIELD_ACCESS | FROM | WHERE | BETWEEN | AND | OR | NOT | GROUP | ASC | DESC | ORDER | HAVING | BREAK | BY | LIMIT | LIKE | IN | THEN | JAVASCRIPT | JOIN | LEFT_JOIN | RIGHT_JOIN | ON | OPT_SEMI_COLON | OPT_AMPERSAND | WS | DATE_YEAR_MONTH_ONLY | DATE | DATE_HOUR | DATE_HOUR_MIN | DATE_HOUR_MIN_SEC | DATE_HOUR_MIN_SEC_SUB | DATE_HOUR_MIN_SEC_SUB_TZ | DATE_HOUR_MIN_SEC_SUB_UTC_TZ | ARITH_OPER | EQUALS | COMPARE_OPER | ID | SINGLE_QUOTE_STRING | LONG | FLOAT );";
 		}
 	}
 
