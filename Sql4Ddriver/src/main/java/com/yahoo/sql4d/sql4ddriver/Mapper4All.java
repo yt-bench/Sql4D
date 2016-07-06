@@ -72,6 +72,9 @@ public class Mapper4All extends BaseMapper {
         List<Object> rowValues = new ArrayList<>();
         rowValues.add(timestamp);
         for (Object key : jsonRow.keySet()) {
+          if(jsonRow.isNull(key.toString()))
+            rowValues.add(null);
+          else
             rowValues.add(jsonRow.get(key.toString()));
         }
         return rowValues;
