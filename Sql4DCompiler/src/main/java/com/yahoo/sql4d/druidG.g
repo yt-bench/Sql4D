@@ -427,7 +427,7 @@ simpleLogicalFilter returns [Filter filter]
 
 	
 simpleFilter returns [Filter filter]
-	:	(a=selectorFilter | a=regexFilter) {filter = a;}
+	:	(a=selectorFilter | a=regexFilter | a=inFilter) {filter = a;}
 	;
 
 selectorFilter returns [Filter filter]
@@ -446,6 +446,22 @@ regexFilter returns [Filter filter]
 		}
 	;
 
+inFilter returns [Filter filter]
+@init {filter = new Filter("in");filter.values = new ArrayList<>();}
+	: (a=ID WS IN WS LPARAN WS? b=(SINGLE_QUOTE_STRING)
+			{
+				filter.values.add(unquote($b.text));
+			}
+			(WS? ',' WS? b=(SINGLE_QUOTE_STRING)
+				{
+					filter.values.add(unquote($b.text));
+				}
+			)*
+	  WS? RPARAN )
+		{
+			filter.dimension = $a.text;
+		}
+	;
 
 /////////////////////////////////////////////////////////	  
 ///////////////////  Aggregation rules  //////////////////	
@@ -641,6 +657,7 @@ BY	:	('BY' | 'by');
 
 LIMIT	:	('LIMIT' | 'limit');// Threshold for TopN (OR) just row limit for every query type.
 LIKE	:	('LIKE' | 'like');
+IN		:	('IN' | 'in');
 THEN	:	('THEN' | 'then');// Used for post aggregations.
 
 JAVASCRIPT 

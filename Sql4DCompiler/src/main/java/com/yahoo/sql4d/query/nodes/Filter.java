@@ -20,6 +20,7 @@ import org.json.JSONObject;
  * Ex:
  * "filter": { "type": "selector", "dimension": <dimension_string>, "value": <dimension_value_string> }
    "filter": { "type": "regex", "dimension": <dimension_string>, "pattern": <pattern_string> }
+   "filter": { "type": "in", "dimension": <dimension_string>, "values": [<value1>, <value2>, ...] }
    "filter": { "type": "and", "fields": [<filter>, <filter>, ...] }
    "filter": { "type": "or", "fields": [<filter>, <filter>, ...] }
    "filter": { "type": "not", "field": <filter> }
@@ -33,6 +34,7 @@ public class Filter  {
     public String type;
     public String dimension;
     public String value;
+    public List<String> values;  //values for in filter
     public String pattern;
 
     public List<Filter> fields;
@@ -60,6 +62,9 @@ public class Filter  {
         }
         if (value != null) {
             map.put("value", value);
+        }
+        if (values != null) {
+            map.put("values", values);
         }
         if (pattern != null) {
             map.put("pattern", pattern);
