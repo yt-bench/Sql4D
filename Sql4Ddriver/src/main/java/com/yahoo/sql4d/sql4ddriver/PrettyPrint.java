@@ -40,7 +40,10 @@ public final class PrettyPrint {
             table[index] = new String[row.size()];
             int i = 0;
             for (Object col:row) {
-                table[index][i++] = col.toString();
+            	if(col==null)
+            		table[index][i++] = null;
+            	else
+            		table[index][i++] = col.toString();
             }
             index++;
         }
