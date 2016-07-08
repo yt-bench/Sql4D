@@ -10,9 +10,11 @@
  */
 package com.yahoo.sql4d.query.groupby;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -24,7 +26,7 @@ public class Having {
     public String type;
     public String aggregation;
     public String value;
-    public List<Having> havingSpecs;
+    public List<Having> havingSpecs = new ArrayList<Having>();
     
     
     public Having() {
@@ -39,6 +41,11 @@ public class Having {
         this.aggregation = aggregation;
         this.value = value;
     }
+
+    public void addHaving(Having having){
+        this.havingSpecs.add(having);
+    }
+
     @Override
     public String toString() {
         return getJson().toString(2);

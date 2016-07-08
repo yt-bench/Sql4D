@@ -202,7 +202,7 @@ queryStmnt returns [QueryMeta qMeta]
 		   )? {qMeta = QueryUtils.checkAndPromoteToTimeSeries(qMeta);}
 		  (WS ORDER WS BY WS (id=ID) 
 		      {	
-		  	if (((PlainDimQueryMeta)qMeta).fetchDimensions.size() != 1) {
+			if (((PlainDimQueryMeta)qMeta).fetchDimensions.size() != 1 || ((GroupByQueryMeta)qMeta).having != null) {
 			   ((GroupByQueryMeta)qMeta).limitSpec = new LimitSpec();
 			   
 		  	} else {// If fetchDimensions = 1 then TopN is more optimal.
@@ -213,6 +213,10 @@ queryStmnt returns [QueryMeta qMeta]
 		       
 		      (WS dir=(ASC|DESC) 
 		      { 
+		        //qMeta should be GroupByQueryMeta when sql has ASC or DESC
+		        qMeta = GroupByQueryMeta.promote(qMeta);
+		        ((GroupByQueryMeta)qMeta).limitSpec = new LimitSpec();
+
 		        if (qMeta instanceof GroupByQueryMeta && ((GroupByQueryMeta)qMeta).limitSpec != null) {
 			    if ($dir != null && $dir.text != null) {
 			        ((GroupByQueryMeta)qMeta).limitSpec.addColumn($id.text, $dir.text);
@@ -239,7 +243,7 @@ queryStmnt returns [QueryMeta qMeta]
 			    ((SelectQueryMeta)qMeta).pagingSpec.threshold = Integer.valueOf($l.text);	      	
 		      	} else if (qMeta instanceof TopNQueryMeta) {
 		      	    ((TopNQueryMeta)qMeta).threshold = Integer.valueOf($l.text);
-		      	} else if (((PlainDimQueryMeta)qMeta).fetchDimensions.size() != 1) {
+		      	} else if (((PlainDimQueryMeta)qMeta).fetchDimensions.size() != 1 || ((GroupByQueryMeta)qMeta).having != null) {
 		      	    if (((GroupByQueryMeta)qMeta).limitSpec != null) {
 		      	        ((GroupByQueryMeta)qMeta).limitSpec.limit = Long.valueOf($l.text);
 		      	    }
@@ -375,11 +379,20 @@ simpleHaving  returns [Having having]
 	;
 
 complexHaving  returns [Having having]
-	: (s=simpleHaving ){having = s;}
-	| (a=simpleHaving WS o=(AND|OR) WS b=complexHaving) 
-	    {having = new Having($o.text.toLowerCase()); having.havingSpecs = Arrays.asList(a,b);}
-	;
-	
+  : (s=simpleHaving ){having = s;} (WS o=(AND|OR) WS b=complexHaving
+                {Having tmpHaving = having;
+       having = new Having($o.text.toLowerCase());
+       having.addHaving(tmpHaving);
+       having.addHaving(b);
+    })?
+  |LPARAN WS? a=complexHaving  {having = a;} (WS o=(AND|OR) WS b=complexHaving
+                {Having tmpHaving = having;
+       having = new Having($o.text.toLowerCase());
+       having.addHaving(tmpHaving);
+       having.addHaving(b);
+    })? WS? RPARAN
+  ;
+
 /////////////////////////////////////////////////////////	  
 /////////////////// Logical Filters        //////////////////	
 /////////////////////////////////////////////////////////	
