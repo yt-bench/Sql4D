@@ -62,7 +62,9 @@ public class LimitSpec {
     public Map<String, Object> getJsonMap() {
         Map<String, Object> map = new LinkedHashMap<>();
         map.put("type", type);
-        map.put("limit", limit);
+        if(limit>0){
+            map.put("limit", limit);
+        }
         if (columns != null) {
             JSONArray columnsArray = new JSONArray();
             for (Map.Entry<String, Direction> item : columns.entrySet()) {
