@@ -1,4 +1,4 @@
-// $ANTLR 3.5.2 Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g 2016-07-08 17:47:50
+// $ANTLR 3.5.2 Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g 2016-07-14 16:15:33
 
 	package com.yahoo.sql4d.converter;
 
@@ -5316,7 +5316,7 @@ public class druidGParser extends Parser {
 
 
 	// $ANTLR start "complexHaving"
-	// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:381:1: complexHaving returns [Having having] : ( (s= simpleHaving ) ( WS o= ( AND | OR ) WS b= complexHaving )? | LPARAN ( WS )? a= complexHaving ( WS o= ( AND | OR ) WS b= complexHaving )? ( WS )? RPARAN );
+	// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:381:1: complexHaving returns [Having having] : ( (s= simpleHaving ) ( WS o= ( AND | OR ) WS b= complexHaving )? | LPARAN ( WS )? a= complexHaving ( WS o= ( AND | OR ) WS b= complexHaving )* ( WS )? RPARAN );
 	public final Having complexHaving() throws RecognitionException {
 		Having having = null;
 
@@ -5327,7 +5327,7 @@ public class druidGParser extends Parser {
 		Having a =null;
 
 		try {
-			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:382:3: ( (s= simpleHaving ) ( WS o= ( AND | OR ) WS b= complexHaving )? | LPARAN ( WS )? a= complexHaving ( WS o= ( AND | OR ) WS b= complexHaving )? ( WS )? RPARAN )
+			// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:382:3: ( (s= simpleHaving ) ( WS o= ( AND | OR ) WS b= complexHaving )? | LPARAN ( WS )? a= complexHaving ( WS o= ( AND | OR ) WS b= complexHaving )* ( WS )? RPARAN )
 			int alt189=2;
 			int LA189_0 = input.LA(1);
 			if ( (LA189_0==ID||LA189_0==NOT) ) {
@@ -5534,7 +5534,7 @@ public class druidGParser extends Parser {
 					}
 					break;
 				case 2 :
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:388:4: LPARAN ( WS )? a= complexHaving ( WS o= ( AND | OR ) WS b= complexHaving )? ( WS )? RPARAN
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:388:4: LPARAN ( WS )? a= complexHaving ( WS o= ( AND | OR ) WS b= complexHaving )* ( WS )? RPARAN
 					{
 					match(input,LPARAN,FOLLOW_LPARAN_in_complexHaving2759); 
 					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:388:11: ( WS )?
@@ -5558,16 +5558,20 @@ public class druidGParser extends Parser {
 					state._fsp--;
 
 					having = a;
-					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:388:46: ( WS o= ( AND | OR ) WS b= complexHaving )?
-					int alt187=2;
-					int LA187_0 = input.LA(1);
-					if ( (LA187_0==WS) ) {
-						int LA187_1 = input.LA(2);
-						if ( (LA187_1==AND||LA187_1==OR) ) {
-							alt187=1;
+					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:388:46: ( WS o= ( AND | OR ) WS b= complexHaving )*
+					loop187:
+					while (true) {
+						int alt187=2;
+						int LA187_0 = input.LA(1);
+						if ( (LA187_0==WS) ) {
+							int LA187_1 = input.LA(2);
+							if ( (LA187_1==AND||LA187_1==OR) ) {
+								alt187=1;
+							}
+
 						}
-					}
-					switch (alt187) {
+
+						switch (alt187) {
 						case 1 :
 							// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:388:47: WS o= ( AND | OR ) WS b= complexHaving
 							{
@@ -5594,6 +5598,9 @@ public class druidGParser extends Parser {
 							}
 							break;
 
+						default :
+							break loop187;
+						}
 					}
 
 					// Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g:393:9: ( WS )?

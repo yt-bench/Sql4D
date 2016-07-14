@@ -390,7 +390,7 @@ complexHaving  returns [Having having]
        having = new Having($o.text.toLowerCase());
        having.addHaving(tmpHaving);
        having.addHaving(b);
-    })? WS? RPARAN
+    })* WS? RPARAN
   ;
 
 /////////////////////////////////////////////////////////	  
