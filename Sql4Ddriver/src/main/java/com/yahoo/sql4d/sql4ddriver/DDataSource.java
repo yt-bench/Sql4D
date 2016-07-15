@@ -143,25 +143,25 @@ public class DDataSource {
      */
     public Program<BaseStatementMeta> getCompiledAST(String sqlQuery, NamedParameters namedParams, Map<String, String> reqHeaders) throws Exception {
         Program<BaseStatementMeta> pgm = DCompiler.compileSql(preprocessSqlQuery(sqlQuery, namedParams));
-        for (BaseStatementMeta stmnt : pgm.getAllStmnts()) {
-            if (stmnt instanceof QueryMeta) {
-                QueryMeta query = (QueryMeta) stmnt;
-                if (query.queryType == RequestType.SELECT) {//classifyColumnsToDimAndMetrics
-                    Either<String, Tuple2<List<String>, List<String>>> dataSourceDescRes = coordinator.aboutDataSource(stmnt.dataSource, reqHeaders);
-                    if (dataSourceDescRes.isLeft()) {
-                        throw new Exception("Datasource info either not available (or)could not be loaded ." + dataSourceDescRes.left().get());
-                    } else {
-                        ((SelectQueryMeta) query).postProcess(dataSourceDescRes.right().get());
-                    }
-                }
-            } else if (stmnt instanceof InsertMeta) {//TODO: Handle this.
-
-            } else if (stmnt instanceof DeleteMeta) {//TODO: Handle this.
-
-            } else if (stmnt instanceof DropMeta) {//TODO: Handle this.
-
-            }
-        }
+//        for (BaseStatementMeta stmnt : pgm.getAllStmnts()) {
+//            if (stmnt instanceof QueryMeta) {
+//                QueryMeta query = (QueryMeta) stmnt;
+//                if (query.queryType == RequestType.SELECT) {//classifyColumnsToDimAndMetrics
+//                    Either<String, Tuple2<List<String>, List<String>>> dataSourceDescRes = coordinator.aboutDataSource(stmnt.dataSource, reqHeaders);
+//                    if (dataSourceDescRes.isLeft()) {
+//                        throw new Exception("Datasource info either not available (or)could not be loaded ." + dataSourceDescRes.left().get());
+//                    } else {
+//                        ((SelectQueryMeta) query).postProcess(dataSourceDescRes.right().get());
+//                    }
+//                }
+//            } else if (stmnt instanceof InsertMeta) {//TODO: Handle this.
+//
+//            } else if (stmnt instanceof DeleteMeta) {//TODO: Handle this.
+//
+//            } else if (stmnt instanceof DropMeta) {//TODO: Handle this.
+//
+//            }
+//        }
         //TODO: Do something if pgm is invalid !!!
         pgm.isValid();
         return pgm;
