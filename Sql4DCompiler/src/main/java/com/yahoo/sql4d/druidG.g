@@ -243,7 +243,7 @@ queryStmnt returns [QueryMeta qMeta]
 			    ((SelectQueryMeta)qMeta).pagingSpec.threshold = Integer.valueOf($l.text);	      	
 		      	} else if (qMeta instanceof TopNQueryMeta) {
 		      	    ((TopNQueryMeta)qMeta).threshold = Integer.valueOf($l.text);
-		      	} else if (((PlainDimQueryMeta)qMeta).fetchDimensions.size() != 1 || ((GroupByQueryMeta)qMeta).having != null) {
+		      	} else if (qMeta instanceof GroupByQueryMeta) {
 		      	    if (((GroupByQueryMeta)qMeta).limitSpec != null) {
 		      	        ((GroupByQueryMeta)qMeta).limitSpec.limit = Long.valueOf($l.text);
 		      	    }

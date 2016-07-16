@@ -1,4 +1,4 @@
-// $ANTLR 3.5.2 Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g 2016-07-14 16:15:33
+// $ANTLR 3.5.2 Sql4DCompiler/src/main/java/com/yahoo/sql4d/druidG.g 2016-07-16 19:18:13
 
 	package com.yahoo.sql4d.converter;
 
@@ -3210,7 +3210,7 @@ public class druidGParser extends Parser {
 										    ((SelectQueryMeta)qMeta).pagingSpec.threshold = Integer.valueOf((l!=null?l.getText():null));	      	
 									      	} else if (qMeta instanceof TopNQueryMeta) {
 									      	    ((TopNQueryMeta)qMeta).threshold = Integer.valueOf((l!=null?l.getText():null));
-									      	} else if (((PlainDimQueryMeta)qMeta).fetchDimensions.size() != 1 || ((GroupByQueryMeta)qMeta).having != null) {
+									      	} else if (qMeta instanceof GroupByQueryMeta) {
 									      	    if (((GroupByQueryMeta)qMeta).limitSpec != null) {
 									      	        ((GroupByQueryMeta)qMeta).limitSpec.limit = Long.valueOf((l!=null?l.getText():null));
 									      	    }
