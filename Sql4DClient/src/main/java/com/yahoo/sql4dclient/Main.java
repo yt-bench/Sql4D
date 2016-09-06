@@ -127,22 +127,19 @@ public class Main {
         println("");
     }
 
-    private static void init(String[] args) {
+    public static void init(String[] args) {
         defineOptions();
         try {
             CommandLine cmd = parser.parse(options, args);
-            if (!cmd.hasOption("bh") || !cmd.hasOption("bp")
-                    || !cmd.hasOption("ch") || !cmd.hasOption("cp")
-                    || !cmd.hasOption("oh") || !cmd.hasOption("op")
-                     || !cmd.hasOption("i")) {
+            if (!cmd.hasOption("bh") || !cmd.hasOption("bp")) {
                 printUsage();
             }
             brokerHost = getOptionValue(cmd, "bh", "broker_host", null);
             brokerPort = Integer.parseInt(getOptionValue(cmd, "bp", "broker_port", null));
             coordinatorHost = getOptionValue(cmd, "ch", "coordinator_host", null);
-            coordinatorPort = Integer.parseInt(getOptionValue(cmd, "cp", "coordinator_port", null));
+            coordinatorPort = Integer.parseInt(getOptionValue(cmd, "cp", "coordinator_port", "8081"));
             overlordHost = getOptionValue(cmd, "oh", "overlord_host", null);
-            overlordPort = Integer.parseInt(getOptionValue(cmd, "op", "overlord_port", null));
+            overlordPort = Integer.parseInt(getOptionValue(cmd, "op", "overlord_port", "8090"));
             mysqlHost = getOptionValue(cmd, "mh", "mysql_host", "localhost");
             mysqlPort = Integer.parseInt(getOptionValue(cmd, "mp", "mysql_port", "3306"));
             mysqlId = getOptionValue(cmd, "mid", "mysql_id", "druid");
@@ -252,7 +249,7 @@ public class Main {
         repeatStrToConsole("\b \b", times);
     }
     
-    private static boolean runCommand(String frozenCommand) {
+    public static boolean runCommand(String frozenCommand) {
         frozenCommand = frozenCommand.replaceAll("\n", "");
         if (frozenCommand.matches(quitRegex)) {
             println("Good Bye !!");
